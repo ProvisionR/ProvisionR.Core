@@ -217,7 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="UnitTests\import.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
