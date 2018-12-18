@@ -1,21 +1,10 @@
-﻿using Capgemini.SharePoint.Provisioning.Core.Engine.Interfaces;
-using Capgemini.SharePoint.Provisioning.Engine.Interfaces;
-using Microsoft.SharePoint.Client;
-using Microsoft.SharePoint.Client.Search.Administration;
-using Microsoft.SharePoint.Client.Search.Portability;
-using OfficeDevPnP.Core.Framework.Provisioning.Model;
-using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
-using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
-using System;
-using System.Collections.Generic;
+﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+using MarkTek.SharePoint.Provisioning.Engine.Interfaces;
 using System.IO;
 using System.Linq;
-using System.Management.Automation;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Capgemini.SharePoint.Deployer.Search
+namespace MarkTek.SharePoint.Deployer.Search
 {
     public class TermStoreImporter : BaseDeployer, IDeployableComponent
     {

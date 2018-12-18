@@ -1,11 +1,8 @@
-﻿
-using Capgemini.SharePoint.Provisioning.Core;
-using Microsoft.SharePoint.Client;
-using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
+﻿using MarkTek.SharePoint.Provisioning.Core;
 using System;
 using System.Threading;
 
-namespace Capgemini.SharePoint.Deployer
+namespace MarkTek.SharePoint.Deployer
 {
     /// <summary>
     /// Base Class for All Export Components

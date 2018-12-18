@@ -1,15 +1,9 @@
-﻿using Capgemini.SharePoint.Deployer.ExtensibleHandlers;
-using Capgemini.SharePoint.Provisioning.Core;
-using Microsoft.SharePoint.Client;
-using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
+﻿using MarkTek.SharePoint.Deployer.ExtensibleHandlers;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Capgemini.SharePoint.Deployer
+namespace MarkTek.SharePoint.Deployer
 {
     public class  Importer 
     {
@@ -32,10 +26,10 @@ namespace Capgemini.SharePoint.Deployer
 
                 var c = new CustomExtender();
                 c.Enabled = true;
-                c.Assembly = "Capgemini.SharePoint.Deployer,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null";
-                c.Type = "Capgemini.SharePoint.Deployer.ExtensibleHandlers.CustomExtender";
+                c.Assembly = "MarkTek.SharePoint.Deployer,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null";
+                c.Type = "MarkTek.SharePoint.Deployer.ExtensibleHandlers.CustomExtender";
 
-                   //Capgemini.SharePoint.Deployer.ExtensibleHandlers.CustomHanderl, Capgemini.SharePoint.Deployer, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
+                   //MarkTek.SharePoint.Deployer.ExtensibleHandlers.CustomHanderl, MarkTek.SharePoint.Deployer, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
 
                 template.ExtensibilityHandlers.Add(c);
 

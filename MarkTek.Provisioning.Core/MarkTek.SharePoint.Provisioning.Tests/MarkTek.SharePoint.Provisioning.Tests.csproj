@@ -202,17 +202,17 @@
     <Compile Include="UnitTests\Core\Tokenisation\TokeniserTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Capgemini.SharePoint.Exporter\Capgemini.SharePoint.Exporter.csproj">
-      <Project>{b32b2900-283a-494b-99e1-1dfdb9ddc28b}</Project>
-      <Name>Capgemini.SharePoint.Exporter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Capgemini.SharePoint.Provisioning.Core.Engine\Capgemini.SharePoint.Provisioning.Core.Engine.csproj">
-      <Project>{B709020E-C0A7-4865-8E10-0B6B3B2BD8B9}</Project>
-      <Name>Capgemini.SharePoint.Provisioning.Core.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Capgemini.SharePoint.Provisioning\Capgemini.SharePoint.Provisioning.Core.csproj">
+    <ProjectReference Include="..\..\..\..\..\..\..\GitHub\ProvisionR.Core-master\MarkTek.Provisioning.Core\Capgemini.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj">
       <Project>{E070602E-6FC4-4305-9CD7-711EDABC8A6A}</Project>
-      <Name>Capgemini.SharePoint.Provisioning.Core</Name>
+      <Name>MarkTek.SharePoint.Provisioning.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarkTek.SharePoint.Exporter\MarkTek.SharePoint.Exporter.csproj">
+      <Project>{b32b2900-283a-494b-99e1-1dfdb9ddc28b}</Project>
+      <Name>MarkTek.SharePoint.Exporter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarkTek.SharePoint.Provisioning.Core.Engine\MarkTek.SharePoint.Provisioning.Core.Engine.csproj">
+      <Project>{B709020E-C0A7-4865-8E10-0B6B3B2BD8B9}</Project>
+      <Name>MarkTek.SharePoint.Provisioning.Core.Engine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

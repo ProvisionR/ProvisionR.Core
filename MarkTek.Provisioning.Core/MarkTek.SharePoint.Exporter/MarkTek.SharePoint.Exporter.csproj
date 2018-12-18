@@ -62,12 +62,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Capgemini.SharePoint.Provisioning\Capgemini.SharePoint.Provisioning.Core.csproj">
-      <Project>{e070602e-6fc4-4305-9cd7-711edabc8a6a}</Project>
-      <Name>Capgemini.SharePoint.Provisioning.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.0.9.9\lib\net45\AngleSharp.dll</HintPath>
     </Reference>
@@ -198,6 +192,12 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\GitHub\ProvisionR.Core-master\MarkTek.Provisioning.Core\Capgemini.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj">
+      <Project>{E070602E-6FC4-4305-9CD7-711EDABC8A6A}</Project>
+      <Name>MarkTek.SharePoint.Provisioning.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

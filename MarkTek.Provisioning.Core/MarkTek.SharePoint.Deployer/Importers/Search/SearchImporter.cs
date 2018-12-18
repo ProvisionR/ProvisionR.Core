@@ -1,5 +1,5 @@
-﻿using Capgemini.SharePoint.Provisioning.Core.Engine.Interfaces;
-using Capgemini.SharePoint.Provisioning.Engine.Interfaces;
+﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+using MarkTek.SharePoint.Provisioning.Engine.Interfaces;
 using Microsoft.SharePoint.Client.Search.Administration;
 using Microsoft.SharePoint.Client.Search.Portability;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capgemini.SharePoint.Deployer.Search
+namespace MarkTek.SharePoint.Deployer.Search
 {
     public class SearchImporter : BaseDeployer, IDeployableComponent //, ISearchImporter
     {

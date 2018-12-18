@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capgemini.SharePoint.Deployer.Importers.General
+namespace MarkTek.SharePoint.Deployer.Importers.General
 {
     public class TemplateImporter
     {

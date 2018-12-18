@@ -1,7 +1,8 @@
-﻿using Capgemini.SharePoint.Exporter.Registry;
+﻿
+using MarkTek.SharePoint.Exporter.Registry;
 using System.Management.Automation;
 
-namespace Capgemini.SharePoint.PowerShell.CmdLets.Export
+namespace MarkTek.SharePoint.PowerShell.CmdLets.Export
 {
 
     [Cmdlet("Export", "Customisations")]
