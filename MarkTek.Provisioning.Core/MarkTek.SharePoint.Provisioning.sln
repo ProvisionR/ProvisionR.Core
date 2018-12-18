@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core", "Capgemini.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj", "{E070602E-6FC4-4305-9CD7-711EDABC8A6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core", "MarkTek.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj", "{E070602E-6FC4-4305-9CD7-711EDABC8A6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Tests", "Capgemini.SharePoint.Provisioning.Tests\MarkTek.SharePoint.Provisioning.Tests.csproj", "{192FA6BA-405E-4D8D-AE07-78F1BDEF967F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Tests", "MarkTek.SharePoint.Provisioning.Tests\MarkTek.SharePoint.Provisioning.Tests.csproj", "{192FA6BA-405E-4D8D-AE07-78F1BDEF967F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Exporter", "Capgemini.SharePoint.Exporter\MarkTek.SharePoint.Exporter.csproj", "{B32B2900-283A-494B-99E1-1DFDB9DDC28B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Exporter", "MarkTek.SharePoint.Exporter\MarkTek.SharePoint.Exporter.csproj", "{B32B2900-283A-494B-99E1-1DFDB9DDC28B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core.Engine", "Capgemini.SharePoint.Provisioning.Core.Engine\MarkTek.SharePoint.Provisioning.Core.Engine.csproj", "{B709020E-C0A7-4865-8E10-0B6B3B2BD8B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core.Engine", "MarkTek.SharePoint.Provisioning.Core.Engine\MarkTek.SharePoint.Provisioning.Core.Engine.csproj", "{B709020E-C0A7-4865-8E10-0B6B3B2BD8B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
