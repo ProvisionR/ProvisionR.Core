@@ -1,5 +1,4 @@
-﻿using System;
-using MarkTek.SharePoint.Provisioning.Core.Configuration;
+﻿using MarkTek.SharePoint.Provisioning.Core.Configuration;
 using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -9,9 +8,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests.UnitTests.Core.Configuration
     public class ConfigurationTests
     {
         private ProvisioningConfig c;
-        private ImportBaseElement i;
-        private CustomExtensibleHander x;
-
+       
         [TestMethod]
         public void Can()
         {
