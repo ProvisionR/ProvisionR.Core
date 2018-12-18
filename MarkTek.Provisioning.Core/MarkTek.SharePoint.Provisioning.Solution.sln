@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Tests", "MarkTek.SharePoint.Provisioning.Tests\MarkTek.SharePoint.Provisioning.Tests.csproj", "{192FA6BA-405E-4D8D-AE07-78F1BDEF967F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core", "..\..\..\..\..\..\GitHub\ProvisionR.Core-master\MarkTek.Provisioning.Core\Capgemini.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj", "{E070602E-6FC4-4305-9CD7-711EDABC8A6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.Provisioning.Core", "MarkTek.Provisioning.Core\MarkTek.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj", "{E070602E-6FC4-4305-9CD7-711EDABC8A6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
