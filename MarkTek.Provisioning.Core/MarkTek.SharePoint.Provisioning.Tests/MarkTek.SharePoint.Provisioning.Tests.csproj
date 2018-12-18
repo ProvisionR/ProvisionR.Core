@@ -210,6 +210,10 @@
       <Project>{B709020E-C0A7-4865-8E10-0B6B3B2BD8B9}</Project>
       <Name>MarkTek.SharePoint.Provisioning.Core.Engine</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MarkTek.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj">
+      <Project>{E070602E-6FC4-4305-9CD7-711EDABC8A6A}</Project>
+      <Name>MarkTek.SharePoint.Provisioning.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
