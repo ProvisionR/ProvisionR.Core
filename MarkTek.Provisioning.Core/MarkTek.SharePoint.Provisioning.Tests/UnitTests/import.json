@@ -1,0 +1,98 @@
+{
+  "Tokens": [
+    {
+      "TokenName" :  "{siteName}"
+    }
+  ],
+  "ImportableElements": [
+    {
+      "SourceFolder": "RegionalSettings",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SupportedUILanguages",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "AuditSettings",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SitePolicy",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "CustomScripts",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SiteSecurity",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SiteFeatures",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "TermGroups",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SiteFields",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "ContentTypes",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Lists",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Workflows",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Files",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Pages",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "PageContents",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "CustomActions",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Publishing",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "ComposedLook",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "SearchSettings",
+      "Enabled": true,
+      "IsSearchConfig": true
+    },
+    {
+      "SourceFolder": "PropertyBag",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "WebSettings",
+      "Enabled": true
+    },
+    {
+      "SourceFolder": "Navigation",
+      "Enabled": true
+    }
+  ]
+}
