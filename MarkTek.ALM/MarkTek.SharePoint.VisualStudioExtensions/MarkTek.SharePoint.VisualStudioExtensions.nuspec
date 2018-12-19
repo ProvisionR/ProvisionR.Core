@@ -7,7 +7,7 @@
     <authors>MarkTek</authors>
     <owners>MarkTek</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>MarkTek Visual Studio Extensions for SharePoint - contains extract and build scripts</description>
+    <description>MarkTek Visual Studio Extensions for SharePoint - contains extract and build scripts. You can Contact me at mark_cunningham@outlook.com or mark.cunningham@capgemini.com</description>
     <copyright>MarkTek Copyright ©  2018</copyright>
     <dependencies />
    <releaseNotes>This package uses the PnP SharePoint Provisioning Engine.</releaseNotes>
