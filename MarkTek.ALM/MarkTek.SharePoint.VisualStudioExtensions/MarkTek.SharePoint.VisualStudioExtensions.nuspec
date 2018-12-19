@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MarkTek.SharePoint.VisualStudioExtensions</id>
+    <version>1.0.0</version>
+    <title>MarkTek SharePoint Visual Studio Extensions</title>
+    <authors>MarkTek</authors>
+    <owners>MarkTek</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MarkTek Visual Studio Extensions for SharePoint - contains extract and build scripts</description>
+    <copyright>MarkTek Copyright ©  2018</copyright>
+    <dependencies />
+   <releaseNotes>This package uses the PnP SharePoint Provisioning Engine.</releaseNotes>
+  </metadata>
+  <files>
+    <file src="build\**" target="build" />
+    <file src="content\**" target="content" />
+    <file src="tools\**" target="tools" />
+  </files>
+ </package>

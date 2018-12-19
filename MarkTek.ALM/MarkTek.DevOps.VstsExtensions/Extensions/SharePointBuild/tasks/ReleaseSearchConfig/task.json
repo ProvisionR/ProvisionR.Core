@@ -1,0 +1,61 @@
+﻿{
+  "id": "3724D113-B905-422B-A3A2-CBE9988E6BE4",
+  "name": "ReleaseSearchConfig",
+  "friendlyName": "Release SharePoint Search Configuration",
+  "description": "Release SharePoint Search Configuration",
+  "category": "Package",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "author": "markcunninghamuk",
+  "version": {
+    "Major": 1,
+    "Minor": 1,
+    "Patch": 0
+  },
+  "demands": [
+  ],
+  "minimumAgentVersion": "1.83.0",
+  "groups": [
+
+  ],
+  "inputs": [
+    {
+      "name": "templateFile",
+      "type": "filePath",
+      "label": "Path to Search Config XML file",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "connectionString",
+      "type": "string",
+      "label": "SharePoint Site Url",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "label": "Username to deploy with, must have permissions, must be an administrator in the term store",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "label": "Password for deployment, Must be valid",
+      "defaultValue": "",
+      "required": true
+    }
+  ],
+  "instanceNameFormat": "Release SharePoint Customisation $(solutionsPath)",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\ReleaseSearchConfig.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

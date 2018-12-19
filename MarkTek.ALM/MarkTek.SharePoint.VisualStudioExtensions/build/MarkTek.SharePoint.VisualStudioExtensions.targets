@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup> 
+    <SPVersionControlScripts>$(MSBuildThisFileDirectory)..\tools</SPVersionControlScripts>
+</PropertyGroup> 
+
+<Import Project="$(ProjectDir)\SharePointConfiguration.props" />
+
+  <Target Name="Clean">
+    <Exec Command="powershell -command &quot;&amp;'$(SPVersionControlScripts)\ExtractSPCustomisations.ps1' '$(ProjectDir)Src' '$(SharePointSiteUrl)' '$(UserName)' '$(Password)'&quot;" Condition="'$(Configuration)'=='Debug'"/>
+  </Target>
+
+  <!--<Target Name="Build">
+  
+  </Target>-->
+</Project>

@@ -1,0 +1,61 @@
+﻿{
+  "id": "6D72CA1D-7D26-4B49-BDBB-3FBA3714D885",
+  "name": "ReleaseSharePointXmlTemplate",
+  "friendlyName": "Release SharePoint Template",
+  "description": "Release SharePoint Template",
+  "category": "Package",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "author": "markcunninghamuk",
+  "version": {
+    "Major": 1,
+    "Minor": 2,
+    "Patch": 0
+  },
+  "demands": [
+  ],
+  "minimumAgentVersion": "1.83.0",
+  "groups": [
+
+  ],
+  "inputs": [
+    {
+      "name": "templateFile",
+      "type": "filePath",
+      "label": "Path to Xml or PnP file",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "connectionString",
+      "type": "string",
+      "label": "SharePoint Site Url",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "label": "Username to deploy with, must have permissions",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "label": "Password for deployment, Must be valid",
+      "defaultValue": "",
+      "required": true
+    }
+  ],
+  "instanceNameFormat": "Release SharePoint Customisation $(solutionsPath)",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\ReleaseSharePointXmlTemplate.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="MarkTek.SharePoint.Provisioning.Core.Engine.nuspec" />
+    <None Include="MarkTek.SharePoint.Provisioning.Core.Engine.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

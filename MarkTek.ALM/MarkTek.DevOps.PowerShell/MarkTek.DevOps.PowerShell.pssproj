@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8eba918e-3898-4bab-9f37-4ead409e229a}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>MarkTek.DevOps.PowerShell</Name>
+    <ProjectHome />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="CI\" />
+    <Folder Include="CITest\" />
+    <Folder Include="DeploymentIssues\" />
+    <Folder Include="Microsoft.Xrm.Data.Powershell\" />
+    <Folder Include="Microsoft.Xrm.OnlineManagementAPI\" />
+    <Folder Include="OnlineManagementAPITests\" />
+    <Folder Include="PowerShellPNP\" />
+    <Folder Include="EmailUtilities\" />
+    <Folder Include="Microsoft.Xrm.Data.PowershellV9\" />
+    <Folder Include="VSTSDeplymentTasksTests\" />
+    <Folder Include="VSTS_RESTAPITest\" />
+    <Folder Include="VSTS_RESTAPI\" />
+    <Folder Include="VSTSExtensions\" />
+    <Folder Include="VersionControlTest\" />
+    <Folder Include="VersionControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CITest\CopyFilesTest.ps1" />
+    <Compile Include="CITest\DeployCrmSolutionTest.ps1" />
+    <Compile Include="CITest\DeployPAckageDeployerTest.ps1" />
+    <Compile Include="CITest\UpdateSolutionVersionTest.ps1" />
+    <Compile Include="CI\CrmConnectionTest.ps1" />
+    <Compile Include="CI\DeployCrmSolution.ps1" />
+    <Compile Include="CI\UpdateSolutionVersion.ps1" />
+    <Compile Include="DeploymentIssues\SolIdMissing2.ps1" />
+    <Compile Include="DeploymentIssues\SolutionIdMissing.ps1" />
+    <Compile Include="EmailUtilities\SendGridEmail.psm1" />
+    <Compile Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Data.PowerShell.psd1" />
+    <Compile Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Data.PowerShell.psm1" />
+    <Compile Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Data.PowerShell.psd1" />
+    <Compile Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Data.PowerShell.psm1" />
+    <Compile Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.Xrm.OnlineManagementAPI.psd1" />
+    <Compile Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.Xrm.OnlineManagementAPI.psm1" />
+    <Compile Include="OnlineManagementAPITests\BackupInstanceTest.ps1" />
+    <Compile Include="OnlineManagementAPITests\RestoreBackupTest.ps1" />
+    <Compile Include="PowerShellPNP\SharePointPnPPowerShellOnline.psd1" />
+    <Compile Include="VersionControlTest\ExtractCrmCustomizationsTest.ps1" />
+    <Compile Include="VersionControl\BuildCrmCustomizations.ps1" />
+    <Compile Include="VersionControl\CrmTargets.targets" />
+    <Compile Include="VersionControl\ExtractCrmCustomizations.ps1" />
+    <Compile Include="VSTSDeplymentTasksTests\WordTemplatesDeploy.ps1" />
+    <Compile Include="VSTSExtensions\CrmBuildPackageTest.ps1" />
+    <Compile Include="VSTSExtensions\CrmUpdateTask.ps1" />
+    <Compile Include="VSTSExtensions\DeployVSTSBuildExtension.ps1" />
+    <Compile Include="VSTS_RESTAPITest\Delete-Uat-Release-Test.ps1" />
+    <Compile Include="VSTS_RESTAPITest\CompleteReleaseTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\Delete-Branch-Policies-Test.ps1" />
+    <Compile Include="VSTS_RESTAPITest\Find-Matching-Builds-Test.ps1" />
+    <Compile Include="VSTS_RESTAPITest\GetVariableGroups.ps1" />
+    <Compile Include="VSTS_RESTAPITest\GetAgentDetails.ps1" />
+    <Compile Include="VSTS_RESTAPITest\MergeToBranchTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\RemoveSolutionNamesTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\Delete-Branch-Test.ps1" />
+    <Compile Include="VSTS_RESTAPITest\RetrieveCRMInstanceSolutionDetailsTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\RetrieveVSTSLogsTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\SearchReleaseBranchTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\Find-And-Delete-Release-Test.ps1" />
+    <Compile Include="VSTS_RESTAPITest\SearchRepoTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\SearchRepoTestKS.ps1" />
+    <Compile Include="VSTS_RESTAPITest\SetBuildsVariable.ps1" />
+    <Compile Include="VSTS_RESTAPITest\StartReleaseTest.ps1" />
+    <Compile Include="VSTS_RESTAPITest\StartReleaseTestKS.ps1" />
+    <Compile Include="VSTS_RESTAPI\VSTSStatistics.psm1" />
+    <Compile Include="VSTS_RESTAPI\WorkItemsByCommitForRelease.ps1" />
+    <Compile Include="VSTS_RESTAPI\ReleaseCandidateFunctions.psm1" />
+    <Compile Include="VSTS_RESTAPI\VstsTasksHelpers.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Data.PowerShell.Help.xml" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Tooling.Connector.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Tooling.CrmConnectControl.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Tooling.CrmConnector.Powershell.dll" />
+    <Content Include="Microsoft.Xrm.Data.PowershellV9\Microsoft.Xrm.Tooling.Ui.Styles.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Data.PowerShell.Help.pshproj" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Data.PowerShell.Help.xml" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Data.PowerShell.pssproj" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Tooling.Connector.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Tooling.CrmConnectControl.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Tooling.CrmConnector.Powershell.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Tooling.Ui.Styles.dll" />
+    <Content Include="Microsoft.Xrm.Data.Powershell\Microsoft.Xrm.Tooling.WebResourceUtility.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.Rest.ClientRuntime.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.Xrm.OnlineManagementAPI.cat" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Microsoft.Xrm.OnlineManagementAPI.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Newtonsoft.Json.dll" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\PSGetModuleInfo.xml" />
+    <Content Include="Microsoft.Xrm.OnlineManagementAPI\Xrm.Online.Admin.Client.dll" />
+    <Content Include="PowerShellPNP\AngleSharp.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Data.Edm.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Data.OData.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Extensions.Options.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Extensions.WebEncoders.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Graph.Core.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Graph.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Identity.Client.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Identity.Client.Platform.dll" />
+    <Content Include="PowerShellPNP\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="PowerShellPNP\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="PowerShellPNP\Microsoft.IdentityModel.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Office.Client.Policy.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Office.Client.TranslationServices.dll" />
+    <Content Include="PowerShellPNP\Microsoft.Online.SharePoint.Client.Tenant.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.DocumentManagement.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.Publishing.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.Runtime.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.Search.Applications.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.Search.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.Taxonomy.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.UserProfiles.dll" />
+    <Content Include="PowerShellPNP\Microsoft.SharePoint.Client.WorkflowServices.dll" />
+    <Content Include="PowerShellPNP\Microsoft.WindowsAzure.Storage.dll" />
+    <Content Include="PowerShellPNP\Newtonsoft.Json.dll" />
+    <Content Include="PowerShellPNP\OfficeDevPnP.Core.dll" />
+    <Content Include="PowerShellPNP\PSGetModuleInfo.xml" />
+    <Content Include="PowerShellPNP\SharePointPnP.IdentityModel.Extensions.dll" />
+    <Content Include="PowerShellPNP\SharePointPnP.PowerShell.CmdletHelpAttributes.dll" />
+    <Content Include="PowerShellPNP\SharePointPnP.PowerShell.Online.Commands.dll" />
+    <Content Include="PowerShellPNP\SharePointPnP.PowerShell.Online.Commands.dll-help.xml" />
+    <Content Include="PowerShellPNP\SharePointPnP.PowerShell.Online.Commands.Format.ps1xml" />
+    <Content Include="PowerShellPNP\sppnp.ico" />
+    <Content Include="PowerShellPNP\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="PowerShellPNP\System.Net.Http.Formatting.dll" />
+    <Content Include="PowerShellPNP\System.Text.Encodings.Web.dll" />
+    <Content Include="PowerShellPNP\System.Web.Http.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+</Project>
