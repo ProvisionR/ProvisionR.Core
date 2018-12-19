@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.27.1806.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="STS#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Apps in Testing" Description="List of all apps deployed in the Dev Site" DocumentTemplate="" OnQuickLaunch="true" TemplateType="1230" Url="Lists/DraftApps" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="e374875e-06b6-11e0-b0fa-57f5dfd72085" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/DraftApps/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/DraftApps/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/DraftApps/NewForm.aspx" ImageUrl="{site}/_layouts/15/images/itgen.gif?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:Views>
+            <View Name="{71665BEE-23F7-4FD0-B8CF-CB90FD9DEF22}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/Lists/DraftApps/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+              <Query />
+              <ViewFields>
+                <FieldRef ID="{91a39fdb-3417-41e1-81aa-bf989bff000e}" Name="AppName" />
+                <FieldRef ID="{9834a3a3-9752-47e7-b186-9273e8f92624}" Name="AppVersion" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" Explicit="TRUE" />
+                <FieldRef Name="Author" Explicit="TRUE" />
+                <FieldRef ID="{d08e789c-0b0a-4779-ab1c-32ab4ca6b2c3}" Name="ProductId" Explicit="TRUE" />
+                <FieldRef ID="{16691B5C-6607-11E0-8D88-268CDFD72085}" Name="AppInstanceId" Explicit="TRUE" />
+                <FieldRef ID="{27ED35A2-6607-11E0-825D-2E8CDFD72085}" Name="AppParentWebId" Explicit="TRUE" />
+                <FieldRef ID="{E7BCB2BA-BC13-11E0-8882-62344924019B}" Name="AppLaunchUrl" Explicit="TRUE" />
+                <FieldRef ID="{F44D6164-BC13-11E0-9430-69344924019B}" Name="AppStatus" Explicit="TRUE" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>AppDeveloperDash.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Guid" Name="ProductId" ID="{d08e789c-0b0a-4779-ab1c-32ab4ca6b2c3}" DisplayName="Product Id" ReadOnly="TRUE" Indexed="TRUE" ColName="uniqueidentifier1" StaticName="ProductId" SourceID="{{listid:Apps in Testing}}" RowOrdinal="0" Version="8" />
+            <Field Type="Text" Name="AppVersion" ID="{9834a3a3-9752-47e7-b186-9273e8f92624}" DisplayName="Version" ReadOnly="TRUE" ColName="nvarchar4" StaticName="AppVersion" SourceID="{{listid:Apps in Testing}}" RowOrdinal="0" Version="8" />
+            <Field Type="Text" Name="AppName" ID="{91a39fdb-3417-41e1-81aa-bf989bff000e}" DisplayName="App Title" ColName="nvarchar5" StaticName="AppName" SourceID="{{listid:Apps in Testing}}" RowOrdinal="0" Version="8" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

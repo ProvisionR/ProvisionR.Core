@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.27.1806.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="STS#0" Scope="RootSite">
+      <pnp:TermGroups>
+        <pnp:TermGroup Name="People" ID="ec27ce67-89c4-4718-8932-142e5602d8e1" Description="" UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+            <pnp:TermSet Name="Department" ID="8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f" Description="" IsOpenForTermCreation="true">
+              <pnp:CustomProperties>
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+              <pnp:Terms>
+                <pnp:Term Name="BST Programme" ID="45f987ec-aec8-4e37-a467-968d66d36fb3" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" CustomSortOrder="1" SourceTermId="45f987ec-aec8-4e37-a467-968d66d36fb3">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Finance and Analytics" ID="c33671fe-6faa-4d63-b0f6-16536bb16d83" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" CustomSortOrder="2" SourceTermId="c33671fe-6faa-4d63-b0f6-16536bb16d83">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="London" ID="afcc64e1-c74d-45d8-8c03-fd8479290ea4" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" CustomSortOrder="3" SourceTermId="afcc64e1-c74d-45d8-8c03-fd8479290ea4">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="SharePoint Department" ID="ddabe6da-47b9-43d8-9974-3dd8ae7a31e0" Owner="DProdMGD104\_SPOFrm_187169" Description="" CustomSortOrder="4" SourceTermId="ddabe6da-47b9-43d8-9974-3dd8ae7a31e0">
+                  <pnp:Terms />
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+            <pnp:TermSet Name="Job Title" ID="386095d1-c68d-4c6d-b587-48ddaf1aecc9" Description="" IsOpenForTermCreation="true">
+              <pnp:CustomProperties>
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+              <pnp:Terms>
+                <pnp:Term Name="Regional Analyst" ID="8d5f084b-04fd-4470-b99e-9ed882e05320" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" SourceTermId="8d5f084b-04fd-4470-b99e-9ed882e05320">
+                  <pnp:Terms />
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+            <pnp:TermSet Name="Location" ID="b49f64b3-4722-4336-9a5c-56c326b344d4" Description="" IsOpenForTermCreation="true">
+              <pnp:CustomProperties>
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+            </pnp:TermSet>
+          </pnp:TermSets>
+        </pnp:TermGroup>
+      </pnp:TermGroups>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

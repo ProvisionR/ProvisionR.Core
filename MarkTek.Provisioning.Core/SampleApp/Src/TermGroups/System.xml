@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.27.1806.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="STS#0" Scope="RootSite">
+      <pnp:TermGroups>
+        <pnp:TermGroup Name="System" ID="505cdf59-f0c7-430c-957d-a12dbd06788c" Description="These term sets are used by the system itself." UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+            <pnp:TermSet Name="Hashtags" ID="3ceb0050-69a1-40e7-a427-83e2fac80c27" Description="This term set contains all of the terms that have been used as hashtags." IsOpenForTermCreation="true" />
+            <pnp:TermSet Name="Keywords" ID="6593d581-87f8-4f8f-946c-d31531051229" Description="This term set contains all of the terms that have been used as keywords that are not in existing term sets." IsOpenForTermCreation="true">
+              <pnp:Terms>
+                <pnp:Term Name=".NET" ID="4b4c9153-ed29-42aa-8b51-2b7536a72680" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" SourceTermId="4b4c9153-ed29-42aa-8b51-2b7536a72680">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Azure" ID="3b48746a-92d8-4ef7-b378-fdc0d55a76d7" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" SourceTermId="3b48746a-92d8-4ef7-b378-fdc0d55a76d7">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Mumbai University" ID="99747efb-fb64-4ab1-ac15-2deeefeb10da" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" SourceTermId="99747efb-fb64-4ab1-ac15-2deeefeb10da">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="NHSI BST" ID="5570caa6-be3e-4aed-976c-c716d92e0dc1" Owner="i:0#.f|membership|prod@demodevopsprod.onmicrosoft.com" Description="" SourceTermId="5570caa6-be3e-4aed-976c-c716d92e0dc1">
+                  <pnp:Terms />
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+          </pnp:TermSets>
+        </pnp:TermGroup>
+      </pnp:TermGroups>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
