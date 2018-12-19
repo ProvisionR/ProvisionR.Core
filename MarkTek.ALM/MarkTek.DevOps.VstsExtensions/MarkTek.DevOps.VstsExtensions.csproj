@@ -71,6 +71,6 @@
   </Target>
   -->
   <Target Name="Build">
-    <Exec Command="powershell -command &quot;&amp;'$(ProjectDir)\VstsExtensionPackageGenerator.ps1' '$(ProjectDir)$(OutDir)' '$(ProjectDir)../Libraries/node_modules\.bin' '$(ProjectDir)' '$(Configuration)' &quot;" />
+    <Exec Command="powershell -command &quot;&amp;'$(ProjectDir)\VstsExtensionPackageGenerator.ps1' '$(ProjectDir)$(OutDir)' '$(ProjectDir)../Libraries' '$(ProjectDir)' '$(Configuration)' &quot;" />
   </Target>
 </Project>

@@ -4,43 +4,41 @@ Integrate with Visual Studio Team Services from your Node.js apps.
 
 ## Get started
 
+### Samples
+
+See [samples](./samples) for complete coding examples
+
 ### Install the library
 ```
-npm install vso-node-api
+npm install vso-node-api --save
 ```
+
+### Typings
+
+Typings (.d.ts) are now distributed with the api, so intellisense and compile support just works from `tsc` and [vscode]()  
+
+![Intellisense](docs/intellisense.png)  
 
 ### Create a connection
 ```javascript
 var vsts = require('vso-node-api');
 
+// your collection url
 var collectionUrl = "https://fabrikam.visualstudio.com/defaultcollection";
-var creds = vsts.getBasicHandler("myaltusername", "myaltpassword");
- 
-var connection = new vsts.WebApi(collectionUrl, creds);    
+
+// ideally from config
+let token: string = "cbdeb34vzyuk5l4gxc4qfczn3lko3avfkfqyb47etahq6axpcqha"; 
+
+let authHandler = vm.getPersonalAccessTokenHandler(token); 
+var connect = new vsts.WebApi(collectionUrl, creds);    
 ```
-
-#### Auth options:
-
-* For general development and testing, a [personal access token](https://www.visualstudio.com/en-us/get-started/setup/use-personal-access-tokens-to-authenticate) is recommended.
-  ```javascript
-  vsts.getBasicHandler(token, "");
-  ```
-
-* For production, [OAuth access token](https://www.visualstudio.com/en-us/integrate/get-started/auth/oauth) are recommended.
-  ```javascript
-  vsts.getBearerHandler(token);
-  ```
 
 ### Get an instance of a client
 
-The library provides both promise-based and callback style APIs. Your choice.
-
 ```javascript
-// Promise style Git client
-var gitApi = connection.getQGitApi();
+import * as ba from 'vso-node-api/BuildApi';
 
-// Callback style Git client
-var gitApi = connection.getGitApi();
+let vstsBuild: ba.IBuildApi = connection.getBuildApi();
 ```
 
 #### Available clients
@@ -59,45 +57,50 @@ var gitApi = connection.getGitApi();
 * WorkItemTracking
 
 ### Use the client
-
-#### Promise style (recommended)
  
-```javascript
-var gitApi = connection.getQGitApi();
-
-var projectName = "MyProject";
-var repoName = "MyRepo";
-
-// Get latest pull requests from the repo
-gitApi.getPullRequests(repoName, {}, projectName).then(function(pullRequests) {    
-    pullRequests.forEach(function(pullRequest) {
-        // Display each pull request
-        console.log(pullRequest.pullRequestId + ": "+ pullRequest.title);             
-    });              
-}, function(error) {
-    console.log(error);
-});
-```
-
-#### Callback style
+Coding is easy using linear coding with async/await in typescript
 
 ```javascript
-// Get latest pull requests from the repo
-gitApi.getPullRequests(repoName, {}, projectName, null, null, null, function(error, status, pullRequests) {
-    if (error) {
-        console.log(error); 
-    } else {       
-        pullRequests.forEach(function(pullRequest) {
-            // Display each pull request
-            console.log(pullRequest.pullRequestId + ": "+ pullRequest.title);             
-        }); 
-    }
-});
+import * as bi from 'vso-node-api/interfaces/BuildInterfaces';
+
+async function run() {
+    let project: string = 'myProject';
+    let defs: bi.DefinitionReference[] = await vstsBuild.getDefinitions(project);
+
+    defs.forEach((defRef: bi.DefinitionReference) => {
+        console.log(defRef.name + ' (' + defRef.id + ')');
+    });    
+}
+
+run();
 ```
 
 ## APIs
 
 To see what APIs are available, see the appropriate client interface. For example, [GitApi.ts](https://github.com/Microsoft/vsts-node-api/blob/master/api/GitApi.ts)
+
+## Running Samples
+
+Pre-reqs: [Node >= 4.4.7 LTS](https://nodejs.org) and [typescript (tsc) >= 1.8](https://www.npmjs.com/package/typescript)  
+
+Run `npm install` first
+
+Set environment variables using set or export:
+
+```bash
+API_URL=https://fabrikam.visualstudio.com/defaultcollection  
+
+// use your token
+API_TOKEN=cbdeb34vzyuk5l4gxc4qfczn3lko3avfkfqyb47etahq6axpcqha  
+
+API_PROJECT=myProject  
+```
+
+Run samples:  
+
+```bash
+$ npm run samples
+```
 
 ## Contributing
 
