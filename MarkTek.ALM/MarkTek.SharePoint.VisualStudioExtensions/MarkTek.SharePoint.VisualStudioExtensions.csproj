@@ -52,6 +52,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="build\MarkTek.SharePoint.VisualStudioExtensions.targets" />
+    <None Include="content\ImportConfig\ImportConfig.json" />
     <None Include="MarkTek.SharePoint.VisualStudioExtensions.nuspec" />
     <None Include="content\SharePointConfiguration.props" />
     <None Include="packages.config">
