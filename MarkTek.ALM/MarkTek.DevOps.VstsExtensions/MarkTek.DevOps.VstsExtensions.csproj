@@ -43,10 +43,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Extensions\SharePointRelease\icon.png" />
-    <Content Include="Extensions\SharePointRelease\logo.png" />
-    <Content Include="Extensions\SharePointBuild\icon.png" />
-    <Content Include="Extensions\SharePointBuild\logo.png" />
+    <Content Include="Extensions\SharePointRelease\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Extensions\SharePointRelease\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Extensions\SharePointBuild\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Extensions\SharePointBuild\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Extensions\SharePointRelease\overview.md" />
     <None Include="Extensions\SharePointRelease\tasks\ReleaseSharePointCustomisations\ReleaseSharePointCustomisations.ps1" />
     <None Include="Extensions\SharePointRelease\tasks\ReleaseSharePointCustomisations\task.json" />
