@@ -1,11 +1,11 @@
 ﻿{
-  "id": "6D72CA1D-7D26-4B49-BDBB-3FBA3714D865",
+  "id": "2424e079-a68f-4730-a6fc-04d999566394",
   "name": "ReleaseSharePointCustomisations",
   "friendlyName": "Release SharePoint Customisations",
   "description": "Uses the MarkTek.SharePoint.Provisioning Engine to release complex sharepoint customisations. Future release will include custom execution to allow override of PnP behaviours",
   "category": "Package",
   "visibility": [
-     "Release"
+    "Release"
   ],
   "author": "markcunninghamuk",
   "version": {
