@@ -8,7 +8,7 @@
   "ImportableElements": [
     {
       "SourceFolder": "PSScripts",
-      "Enabled": true,
+      "Enabled": false,
       "Handler": {
         "CustomCommand": "ExamplePowerShell.ps1",
         "CustomCommandArguments": [
@@ -54,7 +54,7 @@
     },
     {
       "SourceFolder": "TermGroups",
-      "Enabled": true
+      "Enabled": false
     },
     {
       "SourceFolder": "SiteFields",
