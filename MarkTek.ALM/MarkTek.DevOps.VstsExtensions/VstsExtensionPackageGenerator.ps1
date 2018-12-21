@@ -47,18 +47,15 @@ foreach($extensionFolder in $extensionsFolders)
 		    Write-Host "$taskFolder - copying powershell module"
 		    New-Item "$extensionsDestinationDir\$taskFolder\ps-modules" -type directory
 			Copy-Item ("$VstsExtensionsRoot\..\MarkTek.DevOps.PowerShell\PowerShellPNP\*") "$extensionsDestinationDir\$taskFolder\ps-modules" -Force
-		
 		}
 
 		if($extensionFolder.Name -eq "SharePointRelease" )
 		{
-		 #   Write-Host "$taskFolder - copying powershell module"
-		 #   New-Item "$extensionsDestinationDir\$taskFolder\ps-modules" -type directory
-			#Copy-Item ("$VstsExtensionsRoot\..\MarkTek.DevOps.PowerShell\PowerShellPNP\*") "$extensionsDestinationDir\$taskFolder\ps-modules" -Force
-		
 			#Copy MarkTek SharePoint Framework
 			Write-Host "$taskFolder - copying powershell module"
 		    New-Item "$extensionsDestinationDir\$taskFolder\Libs" -type directory
+			Copy-Item ("$VstsExtensionsRoot\Extensions\$extensionFolder\icon.png") "$extensionsDestinationDir\$taskFolder" -Force
+			Copy-Item ("$VstsExtensionsRoot\Extensions\$extensionFolder\logo.png") "$extensionsDestinationDir\$taskFolder" -Force
 		    Copy-Item ("$VstsExtensionsRoot/../MarkTek.SharePoint.VisualStudioExtensions/tools/*.dll") "$extensionsDestinationDir\$taskFolder\Libs" -Force
 		}
 

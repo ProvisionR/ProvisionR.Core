@@ -54,7 +54,7 @@
     },
     {
       "SourceFolder": "TermGroups",
-      "Enabled": false
+      "Enabled": true
     },
     {
       "SourceFolder": "SiteFields",
