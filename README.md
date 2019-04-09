@@ -27,7 +27,6 @@ There are 2 exposed CommandLets that you can use after importing the module
 
 The Guide here explains the process in detail but essentially you create a new project in visual studio, point to sharepoint using a config file and then clean the solution. Once the clean is done you can check it in to source control.
 
-
 ## Importing the Customisations to another tenant
 
 #### The import Configuration
@@ -46,11 +45,8 @@ You have 3 options to do this:
 
 There is an Azure DevOps accelerator to help with the release, It is named 'Release SharePoint Customisations', MarketPlace Download is [Extension](https://marketplace.visualstudio.com/items?itemName=MarkCunninghamUK.MarkTeksharepoint-release-extension)
 
-
 #### Option 3 - C# Code
-The engine is ultimately wrapped in a C# Nuget Package, you will at some point be able to get it via nuget, but for now it is privately hosted.
-
-https://www.nuget.org/packages?q=MsBuild.Xrm.SourceControl
+The engine is ultimately wrapped in a C# Nuget Package https://www.nuget.org/packages/MarkTek.SharePoint.VisualStudioExtensions/
 
 or using the command
 
