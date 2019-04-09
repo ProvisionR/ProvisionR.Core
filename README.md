@@ -63,14 +63,15 @@ c.Export("https://xxxxx.sharepoint.com","xxx@xxxxx.onmicrosoft.com","xxxxxx",@"C
 ##### Import Example
 >var import = new ImportManager();import.Import("https://xxxx.sharepoint.com","admin@xxxxx.onmicrosoft.com", "myPassword",@"C:\_ImportConfig\import.json",@"C:\_SP\Admin\xxx");
 
-
-
 ## Deployment to another Environment, The Import Config File
+
 The Import Config file is used to control the following things when deploying to SharePoint
 
 >The Sequence of Events (It executes in the order the file so it reads top down)
 >The choice of Handler (PnP, PowerShell, Search)
+
 > The search configuration
+
 > Replaceable tokens
 
 For each extracted folder you will need to create an element pointing to the source folder (Relative to the path)
@@ -91,7 +92,7 @@ A real world example below.
   "Tokens": [
     {
       "TokenName": "{{siteName}}",
-      "TokenValue": "nhsidev"
+      "TokenValue": "SiteNameHere"
     }
   ],
   "ImportableElements": [
