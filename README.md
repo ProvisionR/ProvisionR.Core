@@ -65,7 +65,7 @@ c.Export("https://xxxxx.sharepoint.com","xxx@xxxxx.onmicrosoft.com","xxxxxx",@"C
 
 
 
-## Import Config File for C# , Azure DevOps
+## Deployment to another Environment, The Import Config File
 The Import Config file is used to control the following things when deploying to SharePoint
 
 >The Sequence of Events (It executes in the order the file so it reads top down)
