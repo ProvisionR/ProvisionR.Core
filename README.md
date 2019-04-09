@@ -20,9 +20,8 @@ Download the dll's from : [Insert Link to Build OutPut]
 
 There are 2 exposed CommandLets that you can use after importing the module
 
->Import-Customisations
-
->Export-Customisations
+- Import-Customisations
+- Export-Customisations
 
 #### Option 2 - Visual Studio
 
@@ -40,7 +39,6 @@ You have 3 options to do this:
 1) Run the following command (Replacing the tokens with your values)
 
 > Import-Customisations -SharePointSiteUrl "https://xxx.sharepoint.com" -SharePointUserName "myUser" -SharePointPassword "myPassword" -ImportPath "C:\OutPut\Admin" -ImportConfig "C:\ImportConfig.json"
-
 
 #### Option 2 - Azure DevOps
 
