@@ -27,8 +27,6 @@ There are 2 exposed CommandLets that you can use after importing the module
 
 The Guide here explains the process in detail but essentially you create a new project in visual studio, point to sharepoint using a config file and then clean the solution. Once the clean is done you can check it in to source control.
 
-[Capgemini SharePoint Build & Release tools](/Capgemini-DevOps/Technical-Documentation/Capgemini.DevOps.VstsExtensions/Capgemini-SharePoint-Build-&-Release-tools)
-
 
 ##Importing the Customisations to another tenant
 
