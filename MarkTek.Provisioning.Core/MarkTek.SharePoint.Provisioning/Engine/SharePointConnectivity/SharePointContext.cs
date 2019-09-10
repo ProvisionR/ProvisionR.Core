@@ -28,7 +28,7 @@ namespace MarkTek.SharePoint.Provisioning.Core.Engine.SharePointConnectivity
             }
             catch (System.Exception e)
             {
-                Console.WriteLine($"Failed to apply template with error {e.Message}");
+                Console.Error.WriteLine($"##vso[task.logissue type=error] Failed to apply template with error {e.Message}");
             }
            
         }
@@ -52,7 +52,7 @@ namespace MarkTek.SharePoint.Provisioning.Core.Engine.SharePointConnectivity
             }
             catch (System.Exception e)
             {
-                Console.WriteLine($"Failed to apply search settings with error {e.Message}");
+                Console.Error.WriteLine($"##vso[task.logissue type=error] Failed to apply search settings with error {e.Message}");
             }
          
         }
