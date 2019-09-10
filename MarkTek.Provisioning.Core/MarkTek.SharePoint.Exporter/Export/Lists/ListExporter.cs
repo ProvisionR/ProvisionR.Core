@@ -1,7 +1,7 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
 using MarkTek.SharePoint.Provisioning.Core;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
-
+using Microsoft.SharePoint.Client;
 using System.Linq;
 
 namespace MarkTek.SharePoint.Exporter.Lists
@@ -9,7 +9,7 @@ namespace MarkTek.SharePoint.Exporter.Lists
     public class ListExporter : BaseExporter, IExportableComponent
     {
 
-        public ListExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public ListExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

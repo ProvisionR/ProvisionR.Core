@@ -2,13 +2,14 @@
 using MarkTek.SharePoint.Provisioning.Core;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.Linq;
+using Microsoft.SharePoint.Client;
 
 namespace MarkTek.SharePoint.Exporter.PropertyBag
 {
     public class PropertyBagExporter : BaseExporter, IExportableComponent
     {
 
-        public PropertyBagExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public PropertyBagExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

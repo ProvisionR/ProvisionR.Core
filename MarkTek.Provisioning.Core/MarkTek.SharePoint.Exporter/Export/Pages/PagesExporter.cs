@@ -2,13 +2,14 @@
 using MarkTek.SharePoint.Provisioning.Core;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.Linq;
+using Microsoft.SharePoint.Client;
 
 namespace MarkTek.SharePoint.Exporter.Pages
 {
     public class PagesExporter : BaseExporter, IExportableComponent
     {
 
-        public PagesExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public PagesExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

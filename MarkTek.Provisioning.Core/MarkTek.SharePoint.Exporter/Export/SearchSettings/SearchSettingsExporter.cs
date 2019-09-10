@@ -9,7 +9,7 @@ namespace MarkTek.SharePoint.Exporter.SearchSettings
 {
     public class SearchSettingsExporter : BaseExporter, IExportableComponent
     {
-        public SearchSettingsExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public SearchSettingsExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

@@ -11,7 +11,7 @@ namespace MarkTek.SharePoint.Exporter.ContentTypes
     public class ContentTypeExporter : BaseExporter, IExportableComponent
     {
 
-        public ContentTypeExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public ContentTypeExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

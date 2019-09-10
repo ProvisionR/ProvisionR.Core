@@ -15,7 +15,7 @@ namespace MarkTek.SharePoint.Exporter.Features
     public class FeaturesExporter : BaseExporter, IExportableComponent
     {
 
-        public FeaturesExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public FeaturesExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 
