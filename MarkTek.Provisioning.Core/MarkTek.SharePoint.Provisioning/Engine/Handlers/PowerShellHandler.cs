@@ -47,7 +47,7 @@ namespace MarkTek.SharePoint.Provisioning.Core.Engine.Handlers
             }
             catch (Exception ex)
             {
-                Console.Write($"Failed to Execure Powershell script with message {ex.Message}");
+                Console.Error.Write($"##vso[task.logissue type=error] Failed to Execute Powershell script with message {ex.Message}");
             }           
 
         }
