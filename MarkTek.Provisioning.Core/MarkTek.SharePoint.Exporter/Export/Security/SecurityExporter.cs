@@ -11,7 +11,7 @@ namespace MarkTek.SharePoint.Exporter.Security
 
     public class SecurityExporter : BaseExporter, IExportableComponent
     {
-        public SecurityExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public SecurityExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

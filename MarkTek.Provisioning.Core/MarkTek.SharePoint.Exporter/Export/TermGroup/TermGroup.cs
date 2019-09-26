@@ -11,7 +11,7 @@ namespace MarkTek.SharePoint.Exporter.TermGroup
     {
 
 
-        public ExportTermGroup(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public ExportTermGroup(ClientContext clientContext) : base(clientContext)
         {
         }
 

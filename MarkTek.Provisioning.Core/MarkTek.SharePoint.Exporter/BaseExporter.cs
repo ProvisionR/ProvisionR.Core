@@ -13,18 +13,13 @@ namespace MarkTek.SharePoint.Exporter
     /// </summary>
     public abstract class BaseExporter
     {
-        public string SiteUrl { get; }
-        public string UserName { get; }
-        public string Password { get; }
         public string ExportPath { get; private set; }
         public XMLFileSystemTemplateProvider Provider { get; private set; }
-        private static ClientContext _context;
+        private ClientContext _context;
 
-        public BaseExporter(string siteUrl, string username, string password)
+        public BaseExporter(ClientContext clientContext)
         {
-            this.SiteUrl = siteUrl;
-            this.UserName = username;
-            this.Password = password;
+            this._context = clientContext;
         }
 
         internal Site GetSite()
@@ -33,16 +28,7 @@ namespace MarkTek.SharePoint.Exporter
         }
 
         protected ClientContext AcquireContext()
-        {
-            if (_context ==null)
-            {
-                _context = new ClientContext(SiteUrl)
-                {
-                    Credentials = new SharePointOnlineCredentials(UserName, Password.GetSecureString()),
-                    RequestTimeout = Timeout.Infinite
-                };
-            }
-          
+        {      
             return _context;
         }
 

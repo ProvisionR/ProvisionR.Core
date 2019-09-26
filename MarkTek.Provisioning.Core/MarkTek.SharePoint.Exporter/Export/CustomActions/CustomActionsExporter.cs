@@ -1,17 +1,13 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.SharePoint.Client;
 
 namespace MarkTek.SharePoint.Exporter.CustomActions
 {
     public class CustomActionsExporter : BaseExporter, IExportableComponent
     {
 
-        public CustomActionsExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public CustomActionsExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

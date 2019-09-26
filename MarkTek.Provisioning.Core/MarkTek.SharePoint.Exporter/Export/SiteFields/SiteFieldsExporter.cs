@@ -3,13 +3,14 @@ using MarkTek.SharePoint.Provisioning.Core;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.Linq;
 using System.Xml.Linq;
+using Microsoft.SharePoint.Client;
 
 namespace MarkTek.SharePoint.Exporter.SiteFields
 {
 
     public class SiteFieldsExporter : BaseExporter, IExportableComponent
     {
-        public SiteFieldsExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public SiteFieldsExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

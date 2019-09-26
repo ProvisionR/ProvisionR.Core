@@ -9,7 +9,7 @@ namespace MarkTek.SharePoint.Exporter.Export
     public class WebSettingsExporter : BaseExporter, IExportableComponent
     {
 
-        public WebSettingsExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public WebSettingsExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

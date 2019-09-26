@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Threading;
+using MarkTek.SharePoint.Provisioning.Core;
+using Microsoft.SharePoint.Client;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MarkTek.SharePoint.Provisioning.Tests
@@ -13,12 +16,23 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         public string url = "https://markccap-admin.sharepoint.com";
         public string username = "markcccap@markccap.onmicrosoft.com";
         public string password = "Goodearl123";
+        private ClientContext _context;
 
+
+        [TestInitialize]
+        public void Setup()
+        {
+                _context = new   Microsoft.SharePoint.Client.ClientContext(url)
+                {
+                    Credentials = new SharePointOnlineCredentials(username, password.GetSecureString()),
+                    RequestTimeout = Timeout.Infinite
+                };
+        }
 
         [TestMethod]
         public void Export_TermGroups()
         {
-            var c = new Exporter.TermGroup.ExportTermGroup(url, username, password);
+            var c = new Exporter.TermGroup.ExportTermGroup(_context);// url, username, password);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -26,7 +40,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Lists()
         {
-            var c = new Exporter.Lists.ListExporter(url, username, password);
+            var c = new Exporter.Lists.ListExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -34,7 +48,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_ContentTypes()
         {
-            var c = new Exporter.ContentTypes.ContentTypeExporter(url, username, password);
+            var c = new Exporter.ContentTypes.ContentTypeExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -42,7 +56,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Navigation()
         {
-            var c = new Exporter.Navigation.NavigationExporter(url, username, password);
+            var c = new Exporter.Navigation.NavigationExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -50,7 +64,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Security()
         {
-            var c = new Exporter.Security.SecurityExporter(url, username, password);
+            var c = new Exporter.Security.SecurityExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -58,7 +72,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_SiteFields()
         {
-            var c = new Exporter.SiteFields.SiteFieldsExporter(url, username, password);
+            var c = new Exporter.SiteFields.SiteFieldsExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -66,7 +80,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Features()
         {
-            var c = new Exporter.Features.FeaturesExporter(url, username, password);
+            var c = new Exporter.Features.FeaturesExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -74,7 +88,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Properties()
         {
-            var c = new Exporter.SiteProperties.SitePropertiesExporter(url, username, password);
+            var c = new Exporter.SiteProperties.SitePropertiesExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -82,7 +96,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Files()
         {
-            var c = new Exporter.Files.FilesExporter(url, username, password);
+            var c = new Exporter.Files.FilesExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -90,7 +104,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_Pages()
         {
-            var c = new Exporter.Pages.PagesExporter(url, username, password);
+            var c = new Exporter.Pages.PagesExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -98,7 +112,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_ClientSidePagesExporter()
         {
-            var c = new Exporter.Export.ClientSidePagesExporter(url, username, password);
+            var c = new Exporter.Export.ClientSidePagesExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }
@@ -106,7 +120,7 @@ namespace MarkTek.SharePoint.Provisioning.Tests
         [TestMethod]
         public void Export_ComposedLook()
         {
-            var c = new Exporter.ComposedLook.ComposedLookExporter(url, username, password);
+            var c = new Exporter.ComposedLook.ComposedLookExporter(_context);
             c.SetExportPath(Environment.CurrentDirectory);
             c.Export();
         }

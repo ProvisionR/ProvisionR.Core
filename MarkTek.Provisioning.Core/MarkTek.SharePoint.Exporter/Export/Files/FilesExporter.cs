@@ -9,7 +9,7 @@ namespace MarkTek.SharePoint.Exporter.Files
 {
     public class FilesExporter : BaseExporter, IExportableComponent
     {
-        public FilesExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public FilesExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

@@ -9,7 +9,7 @@ namespace MarkTek.SharePoint.Exporter.Export
     public class ClientSidePagesExporter : BaseExporter, IExportableComponent
     {
 
-        public ClientSidePagesExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public ClientSidePagesExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

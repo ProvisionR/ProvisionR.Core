@@ -12,7 +12,7 @@ namespace MarkTek.SharePoint.Exporter.Navigation
 {
     public class NavigationExporter : BaseExporter, IExportableComponent
     {
-        public NavigationExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public NavigationExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

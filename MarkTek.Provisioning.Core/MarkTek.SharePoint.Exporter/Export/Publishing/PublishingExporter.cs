@@ -1,11 +1,12 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 
 namespace MarkTek.SharePoint.Exporter.SearchSettings
 {
     public class PublishingExporter : BaseExporter, IExportableComponent
     {
-        public PublishingExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public PublishingExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

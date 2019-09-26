@@ -13,7 +13,7 @@ namespace MarkTek.SharePoint.Exporter.SiteProperties
 {
     public class SitePropertiesExporter : BaseExporter, IExportableComponent
     {
-        public SitePropertiesExporter(string sharePointUrl, string username, string password) : base(sharePointUrl, username, password)
+        public SitePropertiesExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 

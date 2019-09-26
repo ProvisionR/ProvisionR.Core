@@ -1,5 +1,8 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+using Microsoft.SharePoint.Client;
 using System.Collections.Generic;
+using System.Threading;
+using MarkTek.SharePoint.Provisioning.Core;
 
 namespace MarkTek.SharePoint.Exporter.Registry
 {
@@ -7,25 +10,31 @@ namespace MarkTek.SharePoint.Exporter.Registry
     {
         public List<IExportableComponent> GetExporters(string url, string user, string password)
         {
+            var context = new Microsoft.SharePoint.Client.ClientContext(url)
+            {
+                Credentials = new SharePointOnlineCredentials(user, password.GetSecureString()),
+                RequestTimeout = Timeout.Infinite
+            };
+
             return new List<IExportableComponent>
             {
-                new ComposedLook.ComposedLookExporter(url, user, password),
-                new ContentTypes.ContentTypeExporter(url, user, password),
-                new CustomActions.CustomActionsExporter(url, user, password),
-                new Features.FeaturesExporter(url, user, password),
-                new Files.FilesExporter(url, user, password),
-                new Languages.LanguagesExporter(url, user, password),
-                new Lists.ListExporter(url, user, password),
-                new Navigation.NavigationExporter(url, user, password),
-                new Pages.PagesExporter(url, user, password),
-                new PropertyBag.PropertyBagExporter(url, user, password),
-                new Region.RegionSettingsExporter(url, user, password),
-                new SearchSettings.SearchSettingsExporter(url, user, password),
-                new Security.SecurityExporter(url, user, password),
-                new SiteFields.SiteFieldsExporter(url, user, password),
-                new SitePolicy.SitePolicyExporter(url, user, password),
-                new SiteProperties.SitePropertiesExporter(url, user, password),
-                new TermGroup.ExportTermGroup(url, user, password)
+                new ComposedLook.ComposedLookExporter(context),
+                new ContentTypes.ContentTypeExporter(context),
+                new CustomActions.CustomActionsExporter(context),
+                new Features.FeaturesExporter(context),
+                new Files.FilesExporter(context),
+                new Languages.LanguagesExporter(context),
+                new Lists.ListExporter(context),
+                new Navigation.NavigationExporter(context),
+                new Pages.PagesExporter(context),
+                new PropertyBag.PropertyBagExporter(context),
+                new Region.RegionSettingsExporter(context),
+                new SearchSettings.SearchSettingsExporter(context),
+                new Security.SecurityExporter(context),
+                new SiteFields.SiteFieldsExporter(context),
+                new SitePolicy.SitePolicyExporter(context),
+                new SiteProperties.SitePropertiesExporter(context),
+                new TermGroup.ExportTermGroup(context)
             };
         }
     }

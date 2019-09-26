@@ -1,11 +1,12 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 
 namespace MarkTek.SharePoint.Exporter.Region
 {
     public class RegionSettingsExporter : BaseExporter, IExportableComponent
     {
-        public RegionSettingsExporter(string siteUrl, string username, string password) : base(siteUrl, username, password)
+        public RegionSettingsExporter(ClientContext clientContext) : base(clientContext)
         {
         }
 
