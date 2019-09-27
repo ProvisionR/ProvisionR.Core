@@ -2,13 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MarkTek.SharePoint.Provisioning.Core.Engine</id>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <title>MarkTek.SharePoint.Provisioning.Core.Engine</title>
     <authors>MarkTek</authors>
     <owners>MarkTek</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MarkTek SharePoint Provisioning Engine - Extract import SharePoint customisation using PnP/ Custom C# Code.</description>
     <copyright>MarkTek Copyright ©  2019</copyright>
-    <dependencies>    </dependencies>
+    <dependencies>
+      <dependency id="SharePointPnPCoreOnline" version="3.13.1909" targetFramework="net461" include="contentFiles, build" />
+    </dependencies>
   </metadata>
  </package>
