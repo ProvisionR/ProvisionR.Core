@@ -1,4 +1,5 @@
-﻿[CmdletBinding()] 
+﻿
+[CmdletBinding()] 
 param
 (
 	[parameter(Mandatory=$true)]
@@ -17,8 +18,11 @@ $scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
 
 $moduleName = $scriptPath + "\MarkTek.Devops.SharePoint.PowerShellModule.dll"        
 
-Write-Output "Importing: $moduleName" 
 
-Import-Module -Name $moduleName   
+Write-Output "Importing  : $moduleName" 
+
+
+Import-Module $moduleName
+$error[0].Exception.GetBaseException().LoaderExceptions
 
 Export-Customisations -SharePointSiteUrl $connectionString -SharePointUserName $username -SharePointPassword $password -ExportPath $solutionFilesFolder

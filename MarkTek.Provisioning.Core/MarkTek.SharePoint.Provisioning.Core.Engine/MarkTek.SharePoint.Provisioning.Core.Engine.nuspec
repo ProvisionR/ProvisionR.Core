@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MarkTek.SharePoint.Provisioning.Core.Engine</id>
-    <version>1.0.0.10</version>
+    <version>1.0.0.11</version>
     <title>MarkTek.SharePoint.Provisioning.Core.Engine</title>
     <authors>MarkTek</authors>
     <owners>MarkTek</owners>
@@ -12,7 +12,5 @@
     <dependencies>
       <dependency id="SharePointPnPCoreOnline" version="3.13.1909"/>
     </dependencies>
-    
-    
   </metadata>
  </package>
