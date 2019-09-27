@@ -10,7 +10,7 @@
     <description>MarkTek SharePoint Provisioning Engine - Extract import SharePoint customisation using PnP/ Custom C# Code.</description>
     <copyright>MarkTek Copyright ©  2019</copyright>
     <dependencies>
-      <dependency id="SharePointPnPCoreOnline" version="3.13.1909" targetFramework="net461" include="contentFiles, build" />
+      <dependency id="SharePointPnPCoreOnline" version="3.13.1909" include="contentFiles, build" />
     </dependencies>
   </metadata>
  </package>
