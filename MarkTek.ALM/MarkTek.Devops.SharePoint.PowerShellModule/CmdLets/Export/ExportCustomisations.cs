@@ -1,5 +1,4 @@
 ﻿using System.Management.Automation;
-using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter;
 
 namespace MarkTek.Devops.SharePoint.PowerShellModule.CmdLets.Export
 {
@@ -18,7 +17,9 @@ namespace MarkTek.Devops.SharePoint.PowerShellModule.CmdLets.Export
 
         protected override void ProcessRecord()
         {
-            var export = new RegisteredExporters().GetExporters(SharePointSiteUrl, SharePointUserName, SharePointPassword);
+            
+
+            var export = new MarkTek.SharePoint.Provisioning..Registry.RegisteredExporters().GetExporters(SharePointSiteUrl, SharePointUserName, SharePointPassword);
 
             export.ForEach(e =>
             {

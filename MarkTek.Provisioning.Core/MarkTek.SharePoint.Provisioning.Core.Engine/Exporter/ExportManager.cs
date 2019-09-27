@@ -1,4 +1,4 @@
-﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Registry;
+﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Registry;
 
 namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter
 {

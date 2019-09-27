@@ -2,9 +2,25 @@
 using Microsoft.SharePoint.Client;
 using System.Collections.Generic;
 using System.Threading;
-using MarkTek.SharePoint.Provisioning.Core;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.ComposedLook;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.ContentTypes;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.CustomActions;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Features;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Files;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Lists;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Languages;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Navigation;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Pages;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.PropertyBag;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Region;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SearchSettings;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Security;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SiteFields;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SitePolicy;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SiteProperties;
+using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.TermGroup;
 
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Registry
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Registry
 {
     public class RegisteredExporters
     {
@@ -18,23 +34,23 @@ namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Registry
 
             return new List<IExportableComponent>
             {
-                new ComposedLook.ComposedLookExporter(context),
-                new ContentTypes.ContentTypeExporter(context),
-                new CustomActions.CustomActionsExporter(context),
-                new Features.FeaturesExporter(context),
-                new Files.FilesExporter(context),
-                new Languages.LanguagesExporter(context),
-                new Lists.ListExporter(context),
-                new Navigation.NavigationExporter(context),
-                new Pages.PagesExporter(context),
-                new PropertyBag.PropertyBagExporter(context),
-                new Region.RegionSettingsExporter(context),
-                new SearchSettings.SearchSettingsExporter(context),
-                new Security.SecurityExporter(context),
-                new SiteFields.SiteFieldsExporter(context),
-                new SitePolicy.SitePolicyExporter(context),
-                new SiteProperties.SitePropertiesExporter(context),
-                new TermGroup.ExportTermGroup(context)
+                new ComposedLookExporter(context),
+                new ContentTypeExporter(context),
+                new CustomActionsExporter(context),
+                new FeaturesExporter(context),
+                new FilesExporter(context),
+                new LanguagesExporter(context),
+                new ListExporter(context),
+                new NavigationExporter(context),
+                new PagesExporter(context),
+                new PropertyBagExporter(context),
+                new RegionSettingsExporter(context),
+                new SearchSettingsExporter(context),
+                new SecurityExporter(context),
+                new SiteFieldsExporter(context),
+                new SitePolicyExporter(context),
+                new SitePropertiesExporter(context),
+                new ExportTermGroup(context)
             };
         }
     }
