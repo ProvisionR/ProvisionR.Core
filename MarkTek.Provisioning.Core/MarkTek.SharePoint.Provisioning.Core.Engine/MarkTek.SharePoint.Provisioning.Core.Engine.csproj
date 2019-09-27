@@ -180,7 +180,31 @@
   <ItemGroup>
     <Compile Include="DependencyResolution\ProvisioningContainer.cs" />
     <Compile Include="DependencyResolution\StructureMapIOC.cs" />
+    <Compile Include="Exporter\BaseExporter.cs" />
     <Compile Include="Exporter\ExportManager.cs" />
+    <Compile Include="Exporter\Export\Audit\Audit.cs" />
+    <Compile Include="Exporter\Export\ClientSidePages\ClientSidePagesExporter.cs" />
+    <Compile Include="Exporter\Export\ComposedLook\ComposedLookExporter.cs" />
+    <Compile Include="Exporter\Export\ContentTypes\ContentTypeExporter.cs" />
+    <Compile Include="Exporter\Export\CustomActions\CustomActionsExporter.cs" />
+    <Compile Include="Exporter\Export\Features\FeaturesExporter.cs" />
+    <Compile Include="Exporter\Export\Files\FilesExporter.cs" />
+    <Compile Include="Exporter\Export\Languages\LanguagesExporter.cs" />
+    <Compile Include="Exporter\Export\Lists\ListExporter.cs" />
+    <Compile Include="Exporter\Export\Navigation\NavigationExporter.cs" />
+    <Compile Include="Exporter\Export\Pages\PagesExporter.cs" />
+    <Compile Include="Exporter\Export\ProperyBag\PropertyBagExporter.cs" />
+    <Compile Include="Exporter\Export\Publishing\PublishingExporter.cs" />
+    <Compile Include="Exporter\Export\Region\RegionSettingsExporter.cs" />
+    <Compile Include="Exporter\Export\SearchSettings\SearchSettingsExporter.cs" />
+    <Compile Include="Exporter\Export\Security\SecurityExporter.cs" />
+    <Compile Include="Exporter\Export\SiteFields\SiteFieldsExporter.cs" />
+    <Compile Include="Exporter\Export\SitePolicy\SitePolicyExporter.cs" />
+    <Compile Include="Exporter\Export\SiteProperties\SitePropertiesExporter.cs" />
+    <Compile Include="Exporter\Export\TermGroup\TermGroup.cs" />
+    <Compile Include="Exporter\Export\WebSettings\WebSettingsExporter.cs" />
+    <Compile Include="Exporter\Export\Workflows\WorkflowExporter.cs" />
+    <Compile Include="Exporter\Registry\RegisteredExporters.cs" />
     <Compile Include="Importer\ImportManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -192,10 +216,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MarkTek.SharePoint.Exporter\MarkTek.SharePoint.Exporter.csproj">
-      <Project>{b32b2900-283a-494b-99e1-1dfdb9ddc28b}</Project>
-      <Name>MarkTek.SharePoint.Exporter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MarkTek.SharePoint.Provisioning\MarkTek.SharePoint.Provisioning.Core.csproj">
       <Project>{E070602E-6FC4-4305-9CD7-711EDABC8A6A}</Project>
       <Name>MarkTek.SharePoint.Provisioning.Core</Name>

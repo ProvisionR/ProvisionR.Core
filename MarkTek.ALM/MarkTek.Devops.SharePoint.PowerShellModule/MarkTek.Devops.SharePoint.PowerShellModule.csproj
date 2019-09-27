@@ -42,13 +42,6 @@
     <Reference Include="AngleSharp, Version=0.14.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.0.14.0-alpha-784\lib\net46\AngleSharp.dll</HintPath>
     </Reference>
-    <Reference Include="MarkTek.SharePoint.Provisioning.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="MarkTek.SharePoint.Provisioning.Core.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MarkTek.SharePoint.Provisioning.Core.Engine.1.0.0.4\bin\Release</HintPath>
-    </Reference>
-    <Reference Include="MarkTek.SharePoint.Exporter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MarkTek.SharePoint.Provisioning.Core.Engine.1.0.0.4\bin\Release</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Azure.ActiveDirectory.GraphClient, Version=2.1.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.ActiveDirectory.GraphClient.2.1.1\lib\portable-net4+sl5+win+wpa+wp8\Microsoft.Azure.ActiveDirectory.GraphClient.dll</HintPath>
     </Reference>
