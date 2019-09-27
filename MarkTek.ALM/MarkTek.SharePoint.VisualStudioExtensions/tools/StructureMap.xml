@@ -687,7 +687,7 @@
         </member>
         <member name="M:StructureMap.Configuration.DSL.Expressions.GenericFamilyExpression.ContainerScoped">
             <summary>
-            Convenience method to mark a PluginFamily as a Singleton
+            Convenience method to mark a PluginFamily as ContainerScoped
             </summary>
             <returns></returns>
         </member>
@@ -1605,9 +1605,13 @@
             <summary>
             Choosing option will direct StructureMap to *also* scan files ending in '*.exe'
             </summary>
-            <param name="scanner"></param>
             <param name="assemblyFilter"></param>
-            <param name="includeExeFiles"></param>
+        </member>
+        <member name="M:StructureMap.Graph.AssemblyScanner.AssembliesAndExecutablesFromApplicationBaseDirectory(System.Func{System.String,System.Boolean})">
+            <summary>
+            Choosing option will direct StructureMap to *also* scan files ending in '*.exe'
+            </summary>
+            <param name="pathFilter"></param>
         </member>
         <member name="P:StructureMap.Graph.IAssemblyScanner.Description">
             <summary>
@@ -1747,9 +1751,7 @@
             <summary>
             Choosing option will direct StructureMap to *also* scan files ending in '*.exe'
             </summary>
-            <param name="scanner"></param>
             <param name="assemblyFilter"></param>
-            <param name="includeExeFiles"></param>
         </member>
         <member name="T:StructureMap.Graph.IFamilyPolicy">
             <summary>
