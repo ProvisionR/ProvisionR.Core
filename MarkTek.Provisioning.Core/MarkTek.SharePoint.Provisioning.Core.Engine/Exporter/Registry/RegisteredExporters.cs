@@ -20,7 +20,7 @@ using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SitePolicy;
 using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SiteProperties;
 using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.TermGroup;
 
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Registry
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter
 {
     public class RegisteredExporters
     {

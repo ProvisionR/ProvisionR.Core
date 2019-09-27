@@ -1,4 +1,5 @@
-﻿using System.Management.Automation;
+﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter;
+using System.Management.Automation;
 
 namespace MarkTek.Devops.SharePoint.PowerShellModule.CmdLets.Export
 {
@@ -17,15 +18,15 @@ namespace MarkTek.Devops.SharePoint.PowerShellModule.CmdLets.Export
 
         protected override void ProcessRecord()
         {
-            
+            new ExportManager().Export(SharePointSiteUrl, SharePointUserName,SharePointPassword, ExportPath);
 
-            var export = new MarkTek.SharePoint.Provisioning..Registry.RegisteredExporters().GetExporters(SharePointSiteUrl, SharePointUserName, SharePointPassword);
+            //var export = new MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.RegisteredExporters().GetExporters(SharePointSiteUrl, SharePointUserName, SharePointPassword);
 
-            export.ForEach(e =>
-            {
-                e.SetExportPath(ExportPath);
-                e.Export();
-            });
+            //export.ForEach(e =>
+            //{
+            //    e.SetExportPath(ExportPath);
+            //    e.Export();
+            //});
         }
     }
 }

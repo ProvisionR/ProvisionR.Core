@@ -1,6 +1,4 @@
-﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Registry;
-
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter
+﻿namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter
 {
     /// <summary>
     /// A Facade Class to help you to export SharePoint Customisations from PowerShell
