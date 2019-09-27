@@ -2,7 +2,7 @@
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.ComposedLook
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.ComposedLook
 {
     public class ComposedLookExporter : BaseExporter, IExportableComponent
     {

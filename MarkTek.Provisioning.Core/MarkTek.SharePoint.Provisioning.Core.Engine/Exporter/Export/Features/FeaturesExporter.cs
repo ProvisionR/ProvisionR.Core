@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace MarkTek.SharePoint.Exporter.Features
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Features
 {
     public class FeaturesExporter : BaseExporter, IExportableComponent
     {

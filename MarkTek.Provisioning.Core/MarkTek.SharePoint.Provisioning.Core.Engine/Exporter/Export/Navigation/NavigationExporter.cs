@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading;
 
 
-namespace MarkTek.SharePoint.Exporter.Navigation
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Navigation
 {
     public class NavigationExporter : BaseExporter, IExportableComponent
     {

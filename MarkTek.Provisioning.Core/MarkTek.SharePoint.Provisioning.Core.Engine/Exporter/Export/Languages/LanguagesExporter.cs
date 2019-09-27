@@ -2,7 +2,7 @@
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.Languages
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Languages
 {
     public class LanguagesExporter : BaseExporter, IExportableComponent
     {

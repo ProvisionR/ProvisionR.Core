@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarkTek.SharePoint.Exporter.SiteProperties
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SiteProperties
 {
     public class SitePropertiesExporter : BaseExporter, IExportableComponent
     {

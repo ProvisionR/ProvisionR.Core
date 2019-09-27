@@ -2,7 +2,7 @@
 using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 
-namespace MarkTek.SharePoint.Exporter.Region
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Region
 {
     public class RegionSettingsExporter : BaseExporter, IExportableComponent
     {

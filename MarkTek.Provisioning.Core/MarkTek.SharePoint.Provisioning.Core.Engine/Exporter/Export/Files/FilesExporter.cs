@@ -5,7 +5,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System.Linq;
 
-namespace MarkTek.SharePoint.Exporter.Files
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Files
 {
     public class FilesExporter : BaseExporter, IExportableComponent
     {

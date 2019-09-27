@@ -2,7 +2,7 @@
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.CustomActions
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.CustomActions
 {
     public class CustomActionsExporter : BaseExporter, IExportableComponent
     {

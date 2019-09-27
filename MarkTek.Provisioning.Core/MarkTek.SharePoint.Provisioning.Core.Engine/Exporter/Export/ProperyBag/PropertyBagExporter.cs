@@ -4,7 +4,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.Linq;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.PropertyBag
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.PropertyBag
 {
     public class PropertyBagExporter : BaseExporter, IExportableComponent
     {

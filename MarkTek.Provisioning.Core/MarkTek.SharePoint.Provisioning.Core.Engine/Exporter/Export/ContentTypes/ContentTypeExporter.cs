@@ -6,7 +6,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System.Linq;
 
-namespace MarkTek.SharePoint.Exporter.ContentTypes
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.ContentTypes
 {
     public class ContentTypeExporter : BaseExporter, IExportableComponent
     {

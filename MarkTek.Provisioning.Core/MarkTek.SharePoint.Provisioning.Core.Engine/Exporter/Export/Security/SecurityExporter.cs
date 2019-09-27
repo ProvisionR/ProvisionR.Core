@@ -6,7 +6,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System.Linq;
 using System.Threading;
 
-namespace MarkTek.SharePoint.Exporter.Security
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Security
 {
 
     public class SecurityExporter : BaseExporter, IExportableComponent

@@ -39,6 +39,12 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MarkTek.SharePoint.Provisioning.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MarkTek.SharePoint.Provisioning.Core.Engine.1.0.0.5\lib\net461\MarkTek.SharePoint.Provisioning.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkTek.SharePoint.Provisioning.Core.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MarkTek.SharePoint.Provisioning.Core.Engine.1.0.0.5\lib\net461\MarkTek.SharePoint.Provisioning.Core.Engine.dll</HintPath>
+    </Reference>
     <Reference Include="AngleSharp, Version=0.14.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.0.14.0-alpha-784\lib\net46\AngleSharp.dll</HintPath>
     </Reference>

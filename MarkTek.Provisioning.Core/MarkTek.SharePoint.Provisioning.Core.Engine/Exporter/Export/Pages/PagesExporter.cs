@@ -4,7 +4,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.Linq;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.Pages
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Pages
 {
     public class PagesExporter : BaseExporter, IExportableComponent
     {

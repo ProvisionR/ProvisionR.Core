@@ -7,7 +7,7 @@ using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using System.Text;
 
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Handlers
+namespace MarkTek.SharePoint.Provisioning.Core.Engine
 {
     public class PowerShellHandler : IComponentHandler<PnPTemplateHandler>, IComponentImport
     {

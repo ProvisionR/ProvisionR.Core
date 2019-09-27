@@ -5,7 +5,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using System.Linq;
 
-namespace MarkTek.SharePoint.Exporter.TermGroup
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.TermGroup
 {
     public class ExportTermGroup : BaseExporter, IExportableComponent
     {

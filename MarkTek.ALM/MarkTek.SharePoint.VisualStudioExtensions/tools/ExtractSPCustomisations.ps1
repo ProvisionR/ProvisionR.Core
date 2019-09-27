@@ -2,13 +2,13 @@
 param
 (
 	[parameter(Mandatory=$true)]
-	[string]$solutionFilesFolder, #The folder to extract the SharePoint Customisations
+	[string]$solutionFilesFolder ="C:\Users\macunnin\Desktop\Extract",
 	[parameter(Mandatory=$true)]
-	[string]$connectionString, #The SharePoint site Url,
+	[string]$connectionString = "https://scottishwaterdev.sharepoint.com/sites/DevelopmentServices-Demo",
 	[parameter(Mandatory=$true)]
-	[string]$username,
+	[string]$username = "sharepointadmin@scottishwaterdev.onmicrosoft.com",
 	[parameter(Mandatory=$true)]
-	[string]$password
+	[string]$password = "U2NvdHRpc2hXYXRlckFzdHJvU1A="
 )
 
 Set-ExecutionPolicy –ExecutionPolicy RemoteSigned –Scope CurrentUser

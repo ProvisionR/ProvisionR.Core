@@ -2,7 +2,7 @@
 using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 
-namespace MarkTek.SharePoint.Exporter.SitePolicy
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SitePolicy
 {
 
     public class SitePolicyExporter : BaseExporter, IExportableComponent

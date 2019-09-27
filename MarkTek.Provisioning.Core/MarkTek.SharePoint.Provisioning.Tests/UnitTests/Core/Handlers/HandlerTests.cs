@@ -1,5 +1,5 @@
 ﻿using System;
-using MarkTek.SharePoint.Provisioning.Core.Engine.Handlers;
+using MarkTek.SharePoint.Provisioning.Core.Engine;
 using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
 using MarkTek.SharePoint.Provisioning.Core.Template;
 using Microsoft.SharePoint.Client.Search.Administration;

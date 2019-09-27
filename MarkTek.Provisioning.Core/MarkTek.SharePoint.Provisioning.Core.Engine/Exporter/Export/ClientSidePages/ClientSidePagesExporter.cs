@@ -4,7 +4,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Connectors;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 
-namespace MarkTek.SharePoint.Exporter.Export
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export
 {
     public class ClientSidePagesExporter : BaseExporter, IExportableComponent
     {

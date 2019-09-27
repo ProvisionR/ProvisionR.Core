@@ -1,5 +1,4 @@
-﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Handlers;
-using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
+﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Interfaces;
 using StructureMap;
 using System;
 using System.Collections.Generic;

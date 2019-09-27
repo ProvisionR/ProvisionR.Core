@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using MarkTek.SharePoint.Provisioning.Core;
 
-namespace MarkTek.SharePoint.Exporter.Registry
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.Registry
 {
     public class RegisteredExporters
     {

@@ -2,7 +2,7 @@
 using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 
-namespace MarkTek.SharePoint.Exporter.Export
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export
 {
     public class Audit : BaseExporter, IExportableComponent
     {

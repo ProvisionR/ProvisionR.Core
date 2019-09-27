@@ -5,7 +5,7 @@ using System.Linq;
 using System.Xml.Linq;
 using Microsoft.SharePoint.Client;
 
-namespace MarkTek.SharePoint.Exporter.SiteFields
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SiteFields
 {
 
     public class SiteFieldsExporter : BaseExporter, IExportableComponent

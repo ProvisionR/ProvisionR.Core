@@ -4,7 +4,7 @@ using MarkTek.SharePoint.Provisioning.Core.Template;
 using System.IO;
 using System.Linq;
 
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Handlers
+namespace MarkTek.SharePoint.Provisioning.Core.Engine
 {
     public class SharePointSearchHandler : IComponentHandler<SharePointSearchHandler>, IComponentImport
     {

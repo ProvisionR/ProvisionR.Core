@@ -5,7 +5,7 @@ using Microsoft.SharePoint.Client.Search.Portability;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using System.IO;
 
-namespace MarkTek.SharePoint.Exporter.SearchSettings
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export.SearchSettings
 {
     public class SearchSettingsExporter : BaseExporter, IExportableComponent
     {

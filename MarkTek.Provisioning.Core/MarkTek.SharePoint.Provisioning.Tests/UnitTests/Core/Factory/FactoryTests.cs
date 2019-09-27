@@ -1,5 +1,5 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core;
-using MarkTek.SharePoint.Provisioning.Core.Engine.Handlers;
+using MarkTek.SharePoint.Provisioning.Core.Engine;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MarkTek.SharePoint.Provisioning.Tests.UnitTests.Core.Factory

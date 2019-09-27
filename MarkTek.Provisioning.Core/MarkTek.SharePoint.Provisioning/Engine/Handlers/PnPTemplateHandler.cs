@@ -4,7 +4,7 @@ using MarkTek.SharePoint.Provisioning.Core.Template;
 using System;
 using System.IO;
 
-namespace MarkTek.SharePoint.Provisioning.Core.Engine.Handlers
+namespace MarkTek.SharePoint.Provisioning.Core.Engine
 {
     public class PnPTemplateHandler : IComponentHandler<PnPTemplateHandler>, IComponentImport
     {

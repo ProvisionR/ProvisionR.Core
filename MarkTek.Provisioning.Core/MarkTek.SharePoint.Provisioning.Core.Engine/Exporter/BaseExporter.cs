@@ -6,7 +6,7 @@ using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System;
 using System.Threading;
 
-namespace MarkTek.SharePoint.Exporter
+namespace MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.Export
 {
     /// <summary>
     /// Base Class for All Export Components
