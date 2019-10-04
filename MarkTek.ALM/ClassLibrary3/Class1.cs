@@ -11,7 +11,6 @@ namespace ClassLibrary3
         static void Main(string[] args)
         {
             new MarkTek.SharePoint.Provisioning.Core.Engine.Exporter.ExportManager().Export("https://scottishwaterdev.sharepoint.com/sites/DevelopmentServices-Demo", "sharepointadmin@scottishwaterdev.onmicrosoft.com", "U2NvdHRpc2hXYXRlckFzdHJvU1A=", @"C:\Users\macunnin\Desktop\Extract");
-
         }
     }
 }
