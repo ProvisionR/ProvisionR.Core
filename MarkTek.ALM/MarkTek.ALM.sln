@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.DevOps.VstsExtensio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkTek.SharePoint.VisualStudioExtensions", "MarkTek.SharePoint.VisualStudioExtensions\MarkTek.SharePoint.VisualStudioExtensions.csproj", "{21109F98-A96C-4237-B340-45BE2F42ADB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{34EC3D7C-F24D-4DA7-AE52-BF785F5F152D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{21109F98-A96C-4237-B340-45BE2F42ADB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21109F98-A96C-4237-B340-45BE2F42ADB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21109F98-A96C-4237-B340-45BE2F42ADB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34EC3D7C-F24D-4DA7-AE52-BF785F5F152D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34EC3D7C-F24D-4DA7-AE52-BF785F5F152D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34EC3D7C-F24D-4DA7-AE52-BF785F5F152D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34EC3D7C-F24D-4DA7-AE52-BF785F5F152D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

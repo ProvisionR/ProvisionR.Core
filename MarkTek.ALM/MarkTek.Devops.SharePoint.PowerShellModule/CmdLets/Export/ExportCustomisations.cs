@@ -1,6 +1,6 @@
 ﻿using MarkTek.SharePoint.Provisioning.Core.Engine.Exporter;
-using System.Management.Automation;
 using System;
+using System.Management.Automation;
 
 namespace MarkTek.Devops.SharePoint.PowerShellModule.CmdLets.Export
 {
