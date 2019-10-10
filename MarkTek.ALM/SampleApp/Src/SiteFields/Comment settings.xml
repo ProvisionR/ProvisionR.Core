@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{C274CBFD-084A-4017-925F-CCE50C9E3EEC}" Name="_CommentFlags" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_CommentFlags" Hidden="TRUE" Group="_Hidden" ReadOnly="TRUE" Type="Lookup" List="Docs" ShowField="CommentFlags" DisplayName="Comment settings" FromBaseType="TRUE" DisplaceOnUpgrade="TRUE" FieldRef="ID" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" />
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

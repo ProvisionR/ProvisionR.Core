@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:TermGroups>
+        <pnp:TermGroup Name="Search Dictionaries" ID="d87b6a37-c801-4a36-9046-6296d4779c87" Description="" UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+            <pnp:TermSet Name="Company Exclusions" ID="d41a92ec-33dc-4720-bd03-3a00287653e4" Description="">
+              <pnp:CustomProperties>
+                <pnp:Property Key="IsCustomDictionary" Value="true" />
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+            </pnp:TermSet>
+            <pnp:TermSet Name="Company Inclusions" ID="c866ca65-f095-4a16-9249-028d500f7703" Description="">
+              <pnp:CustomProperties>
+                <pnp:Property Key="IsCustomDictionary" Value="true" />
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+            </pnp:TermSet>
+            <pnp:TermSet Name="Query Spelling Exclusions" ID="190a2c19-cb43-4b06-b5bb-db50945aefbf" Description="">
+              <pnp:CustomProperties>
+                <pnp:Property Key="IsCustomDictionary" Value="true" />
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+            </pnp:TermSet>
+            <pnp:TermSet Name="Query Spelling Inclusions" ID="22035077-2e30-450f-99ac-889a3bec24d8" Description="">
+              <pnp:CustomProperties>
+                <pnp:Property Key="IsCustomDictionary" Value="true" />
+                <pnp:Property Key="SearchCenterNavVer" Value="15" />
+              </pnp:CustomProperties>
+            </pnp:TermSet>
+          </pnp:TermSets>
+        </pnp:TermGroup>
+      </pnp:TermGroups>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

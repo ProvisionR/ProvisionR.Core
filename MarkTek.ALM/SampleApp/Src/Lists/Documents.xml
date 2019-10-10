@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7EC05D88-DA71-41AA-AC89-7EEAEEB3AC31}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
+            <Field ID="{5e0382d1-eb43-4590-a609-575845fa9af9}" Type="Text" DisplayName="Location" Name="MediaServiceLocation" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceLocation" ColName="nvarchar14" RowOrdinal="0" />
+            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceOCR" ColName="ntext3" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ef991a83-108d-4407-8ee5-ccc0c3d836b9" Name="SharedWithUsers" DisplayName="Shared With" />
+            <pnp:FieldRef ID="d3c9caf7-044c-4c71-ae64-092981e54b33" Name="SharedWithDetails" DisplayName="Shared With Details" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

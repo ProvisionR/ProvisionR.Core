@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Text" DisplayName="Asset Reference" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Custom Content Types" ID="{3e6afbe1-00fe-418f-89d9-228882131cd0}" SourceID="{f784250a-289b-42d3-8ad6-239b2aeb4d0b}" StaticName="AssetReference" Name="AssetReference" CustomFormatter="" Description="Only completed for 'facilitation asset' documents." AllowDeletion="TRUE">
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

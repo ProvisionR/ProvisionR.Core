@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0120D520002FB4D0A480551145B429BEAF567CCCB9" Name="DS Case Location" Description="A central location for documents regarding a specific case." Group="SW Custom Content Types" NewFormUrl="_layouts/15/NewDocSet.aspx" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="b824e17e-a1b3-426e-aecf-f0184d900485" Name="ItemChildCount" UpdateChildren="false" />
+            <pnp:FieldRef ID="960ff01f-2b6d-4f1b-9c3f-e19ad8927341" Name="FolderChildCount" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="47abd51d-9a23-45f8-bfa4-289f43a71c4c" Name="CaseReference" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="6deb8bbe-baae-4c64-af46-ca75e0be16a4" Name="CustomerName" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="cbb92da4-fd46-4c7d-af6c-3128c2a5576e" Name="Description" UpdateChildren="false" />
+          </pnp:FieldRefs>
+          <pnp:DocumentSetTemplate>
+            <pnp:AllowedContentTypes>
+              <pnp:AllowedContentType ContentTypeID="0x010100A32ED9EF5513654BB5CD1CB625A794E3" />
+            </pnp:AllowedContentTypes>
+            <pnp:SharedFields>
+              <pnp:SharedField ID="47abd51d-9a23-45f8-bfa4-289f43a71c4c" />
+              <pnp:SharedField ID="6deb8bbe-baae-4c64-af46-ca75e0be16a4" />
+            </pnp:SharedFields>
+            <pnp:WelcomePageFields>
+              <pnp:WelcomePageField ID="47abd51d-9a23-45f8-bfa4-289f43a71c4c" />
+              <pnp:WelcomePageField ID="6deb8bbe-baae-4c64-af46-ca75e0be16a4" />
+            </pnp:WelcomePageFields>
+          </pnp:DocumentSetTemplate>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

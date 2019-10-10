@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Case" Description="" DocumentTemplate="{site}/incident/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="incident" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/incident/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/incident/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/incident/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=46" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="EventReceiversProvisioned" Value="True" Overwrite="false" />
+            <pnp:PropertyBagEntry Key="LastModifiedACTs_0x0120D520002FB4D0A480551145B429BEAF567CCCB9009E8A285604EA8C4CA7445A478FDB6015" Value="07/04/2019 08:41:08" Overwrite="false" />
+            <pnp:PropertyBagEntry Key="LastModifiedACTs_0x0120D520002FB4D0A480551145B429BEAF567CCCB9003E6705FBE151584B8A4AFF2B22F568B2" Value="07/04/2019 08:13:58" Overwrite="false" />
+            <pnp:PropertyBagEntry Key="LastModifiedSFs_0x0120D520002FB4D0A480551145B429BEAF567CCCB9009E8A285604EA8C4CA7445A478FDB6015" Value="07/04/2019 08:41:08" Overwrite="false" />
+            <pnp:PropertyBagEntry Key="LastModifiedSFs_0x0120D520002FB4D0A480551145B429BEAF567CCCB9003E6705FBE151584B8A4AFF2B22F568B2" Value="07/04/2019 08:13:58" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010100A32ED9EF5513654BB5CD1CB625A794E3" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120D520002FB4D0A480551145B429BEAF567CCCB9" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3E8F790D-4242-49EC-98A3-2A092E5D96E9}" Type="HTML" DisplayName="All Documents" Url="{site}/incident/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x012001" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="CaseReference" />
+                <FieldRef Name="CustomerName" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"contentTypeId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","isContentType":true,"templateId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","title":"DS Case Document","visible":true},{"contentTypeId":"0x0120D520002FB4D0A480551145B429BEAF567CCCB900FEF59BC7719B8B4BB87668B63E9ECC02","isContentType":true,"templateId":"0x0120D520002FB4D0A480551145B429BEAF567CCCB900FEF59BC7719B8B4BB87668B63E9ECC02","title":"DS Case Location","visible":true},{"templateId":"NewDOC","title":"Word document","visible":false},{"templateId":"NewXSL","title":"Excel workbook","visible":false},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":false},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false},{"title":"Bohemia","visible":false},{"title":"Prague","visible":false},{"contentTypeId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","isUpload":true,"templateId":"SWDS-333 Validation Rules","title":"SWDS-333 Validation Rules","url":"/sites/DevelopmentServices-Develop-v2/incident/Forms/SWDS-333 Validation Rules.xlsx","visible":true}]</NewDocumentTemplates>
+            </View>
+            <View Name="{740214A0-6F71-434B-806A-174B0D7040C7}" DefaultView="TRUE" Type="HTML" DisplayName="File View" Url="{site}/incident/Forms/FileView.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="CaseReference" />
+                <FieldRef Name="CustomerName" />
+                <FieldRef Name="DocumentType" />
+                <FieldRef Name="NameOfUploader" />
+                <FieldRef Name="PortalVisibility" />
+                <FieldRef Name="DocumentSetDescription" />
+                <FieldRef Name="SourceOfDocument" />
+                <FieldRef Name="AssetReference" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"contentTypeId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","isContentType":true,"templateId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","title":"DS Case Document","visible":true},{"contentTypeId":"0x0120D520002FB4D0A480551145B429BEAF567CCCB900FEF59BC7719B8B4BB87668B63E9ECC02","isContentType":true,"templateId":"0x0120D520002FB4D0A480551145B429BEAF567CCCB900FEF59BC7719B8B4BB87668B63E9ECC02","title":"DS Case Location","visible":true},{"templateId":"NewDOC","title":"Word document","visible":false},{"templateId":"NewXSL","title":"Excel workbook","visible":false},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":false},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false},{"title":"Bohemia","visible":false},{"title":"Prague","visible":false},{"contentTypeId":"0x010100A32ED9EF5513654BB5CD1CB625A794E300D1A3D452E01F2042ACFAADE4D10DC57B","isUpload":true,"templateId":"SWDS-333 Validation Rules","title":"SWDS-333 Validation Rules","url":"/sites/DevelopmentServices-Develop-v2/incident/Forms/SWDS-333 Validation Rules.xlsx","visible":true}]</NewDocumentTemplates>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{5e0382d1-eb43-4590-a609-575845fa9af9}" Type="Text" DisplayName="Location" Name="MediaServiceLocation" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Case}}" StaticName="MediaServiceLocation" ColName="nvarchar19" RowOrdinal="0" Description="" />
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Case}}" StaticName="MediaServiceAutoTags" ColName="nvarchar20" RowOrdinal="0" Description="" />
+            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Case}}" StaticName="MediaServiceOCR" ColName="ntext5" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="47abd51d-9a23-45f8-bfa4-289f43a71c4c" Name="CaseReference" Required="true" DisplayName="Case Reference" />
+            <pnp:FieldRef ID="6deb8bbe-baae-4c64-af46-ca75e0be16a4" Name="CustomerName" Required="true" DisplayName="Customer Name" />
+            <pnp:FieldRef ID="f991c617-8a12-4a8b-b128-c00ca7abb98e" Name="DocumentType" Required="true" DisplayName="Document Type" />
+            <pnp:FieldRef ID="7ae5baf2-b2ce-4d15-b270-9770bdc2c7d6" Name="NameOfUploader" DisplayName="Name of Uploader" />
+            <pnp:FieldRef ID="2cce4cbb-823b-4045-b5bc-fd146f2f1660" Name="PortalVisibility" DisplayName="Portal Visibility" />
+            <pnp:FieldRef ID="1a2bedd5-8317-47be-ae6a-18ea37012569" Name="SourceOfDocument" Required="true" DisplayName="Source of Document" />
+            <pnp:FieldRef ID="cbb92da4-fd46-4c7d-af6c-3128c2a5576e" Name="DocumentSetDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="589b7b33-a13c-4ae3-a76d-e0cec848a661" Name="ProcessedByLogicApp" DisplayName="Processed By Logic App" />
+            <pnp:FieldRef ID="3e6afbe1-00fe-418f-89d9-228882131cd0" Name="AssetReference" DisplayName="Asset Reference" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{8382D247-72A9-44B1-9794-7B177EDC89F3}" Name="_IsRecord" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_IsRecord" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="Item is a Record">
+          <FieldRefs>
+            <FieldRef ID="{CCC1037F-F65E-434A-868E-8C98AF31FE29}" Name="_ComplianceFlags" />
+          </FieldRefs>
+          <DisplayPattern>
+            <Switch>
+              <Expr>
+                <LookupColumn Name="_ComplianceFlags" />
+              </Expr>
+              <Case Value="1">
+                <HTML>Yes</HTML>
+              </Case>
+              <Case Value="3">
+                <HTML>Yes</HTML>
+              </Case>
+              <Default>
+                <HTML>No</HTML>
+              </Default>
+            </Switch>
+          </DisplayPattern>
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

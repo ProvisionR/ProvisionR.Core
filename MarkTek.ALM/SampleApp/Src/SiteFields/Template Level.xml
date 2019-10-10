@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{FA181E85-8465-42fd-BD81-4AFEA427D3FE}" Name="DisplayTemplateLevel" StaticName="DisplayTemplateLevel" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Display Template Columns" DisplayName="Template Level" Description="Select the level of data that this display template expects and is designed to display.  This determines where this template will appear as a selectable option in configuration UIs." Type="Choice" Required="FALSE" CanToggleHidden="TRUE" Sealed="TRUE">
+          <CHOICES>
+            <CHOICE>Item</CHOICE>
+            <CHOICE>Control</CHOICE>
+            <CHOICE>Filter</CHOICE>
+            <CHOICE>Group</CHOICE>
+            <CHOICE>Base</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

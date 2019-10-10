@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0120D5" Name="Document Collection Folder" Description="Create a new Document Collection Folder" Group="_Hidden" Sealed="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="b824e17e-a1b3-426e-aecf-f0184d900485" Name="ItemChildCount" UpdateChildren="false" />
+            <pnp:FieldRef ID="960ff01f-2b6d-4f1b-9c3f-e19ad8927341" Name="FolderChildCount" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

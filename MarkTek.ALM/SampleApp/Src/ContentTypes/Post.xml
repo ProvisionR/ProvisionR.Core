@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0110" Name="Post" Description="Create a new blog post." Group="List Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="Lists/Posts/Post.aspx">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="7662cd2c-f069-4dba-9e35-082cf976e170" Name="Body" UpdateChildren="false" />
+            <pnp:FieldRef ID="38bea83b-350a-1a6e-f34a-93a6af31338b" Name="PostCategory" UpdateChildren="false" />
+            <pnp:FieldRef ID="b1b53d80-23d6-e31b-b235-3a286b9f10ea" Name="PublishedDate" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

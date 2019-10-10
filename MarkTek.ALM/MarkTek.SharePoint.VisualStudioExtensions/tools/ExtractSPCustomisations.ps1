@@ -68,14 +68,7 @@ catch [System.Reflection.ReflectionTypeLoadException]
 }
 
 
-
-
-
-
 Import-Module $moduleName
 $error[0].Exception.GetBaseException().LoaderExceptions
 
 Export-Customisations -SharePointSiteUrl $connectionString -SharePointUserName $username -SharePointPassword $password -ExportPath $solutionFilesFolder
-
-
-

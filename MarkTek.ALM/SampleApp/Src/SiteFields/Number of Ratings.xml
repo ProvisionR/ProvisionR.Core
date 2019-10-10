@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{b1996002-9167-45e5-a4df-b2c41c6723c7}" Name="RatingCount" StaticName="RatingCount" DisplayName="Number of Ratings" Description="Number of ratings submitted" Group="Content Feedback" Type="RatingCount" Min="0" Decimals="0" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" CanToggleHidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" />
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SupportedUILanguages>
+        <pnp:SupportedUILanguage LCID="1033" />
+        <pnp:SupportedUILanguage LCID="1031" />
+        <pnp:SupportedUILanguage LCID="1036" />
+        <pnp:SupportedUILanguage LCID="2108" />
+        <pnp:SupportedUILanguage LCID="1057" />
+        <pnp:SupportedUILanguage LCID="1044" />
+        <pnp:SupportedUILanguage LCID="1049" />
+        <pnp:SupportedUILanguage LCID="2052" />
+        <pnp:SupportedUILanguage LCID="1028" />
+        <pnp:SupportedUILanguage LCID="1081" />
+        <pnp:SupportedUILanguage LCID="1086" />
+        <pnp:SupportedUILanguage LCID="1060" />
+        <pnp:SupportedUILanguage LCID="1030" />
+        <pnp:SupportedUILanguage LCID="1069" />
+        <pnp:SupportedUILanguage LCID="1035" />
+        <pnp:SupportedUILanguage LCID="1043" />
+        <pnp:SupportedUILanguage LCID="1051" />
+        <pnp:SupportedUILanguage LCID="1068" />
+        <pnp:SupportedUILanguage LCID="1026" />
+        <pnp:SupportedUILanguage LCID="1110" />
+        <pnp:SupportedUILanguage LCID="1055" />
+        <pnp:SupportedUILanguage LCID="1106" />
+        <pnp:SupportedUILanguage LCID="1050" />
+        <pnp:SupportedUILanguage LCID="1038" />
+        <pnp:SupportedUILanguage LCID="1042" />
+        <pnp:SupportedUILanguage LCID="1063" />
+        <pnp:SupportedUILanguage LCID="1071" />
+        <pnp:SupportedUILanguage LCID="1025" />
+        <pnp:SupportedUILanguage LCID="1041" />
+        <pnp:SupportedUILanguage LCID="1062" />
+        <pnp:SupportedUILanguage LCID="1164" />
+        <pnp:SupportedUILanguage LCID="1046" />
+        <pnp:SupportedUILanguage LCID="2070" />
+        <pnp:SupportedUILanguage LCID="9242" />
+        <pnp:SupportedUILanguage LCID="1054" />
+        <pnp:SupportedUILanguage LCID="5146" />
+        <pnp:SupportedUILanguage LCID="1029" />
+        <pnp:SupportedUILanguage LCID="3082" />
+        <pnp:SupportedUILanguage LCID="1037" />
+        <pnp:SupportedUILanguage LCID="1045" />
+        <pnp:SupportedUILanguage LCID="10266" />
+        <pnp:SupportedUILanguage LCID="2074" />
+        <pnp:SupportedUILanguage LCID="1058" />
+        <pnp:SupportedUILanguage LCID="1032" />
+        <pnp:SupportedUILanguage LCID="1061" />
+        <pnp:SupportedUILanguage LCID="1040" />
+        <pnp:SupportedUILanguage LCID="1087" />
+        <pnp:SupportedUILanguage LCID="1053" />
+        <pnp:SupportedUILanguage LCID="1066" />
+        <pnp:SupportedUILanguage LCID="1027" />
+        <pnp:SupportedUILanguage LCID="1048" />
+      </pnp:SupportedUILanguages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

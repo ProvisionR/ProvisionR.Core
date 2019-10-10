@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Choice" DisplayName="Processed By Logic App" Description="Used to determine whether this item has been processed by the Logic App triggered on Create/Modification." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Custom Content Types" ID="{589b7b33-a13c-4ae3-a76d-e0cec848a661}" SourceID="{ea8500e5-8b48-4556-ac04-a5e594f45b28}" StaticName="ProcessedByLogicApp" Name="ProcessedByLogicApp" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Processed</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

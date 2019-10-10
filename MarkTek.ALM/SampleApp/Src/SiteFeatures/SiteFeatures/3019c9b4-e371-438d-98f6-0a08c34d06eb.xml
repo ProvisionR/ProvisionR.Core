@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-3019c9b4-e371-438d-98f6-0a08c34d06eb">
+    <pnp:ProvisioningTemplate ID="3019c9b4-e371-438d-98f6-0a08c34d06eb" Version="0" Scope="Undefined">
+      <pnp:Features>
+        <pnp:SiteFeatures>
+          <pnp:Feature ID="3019c9b4-e371-438d-98f6-0a08c34d06eb" />
+        </pnp:SiteFeatures>
+      </pnp:Features>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

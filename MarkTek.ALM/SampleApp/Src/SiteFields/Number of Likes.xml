@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{6E4D832B-F610-41a8-B3E0-239608EFDA41}" Name="LikesCount" StaticName="LikesCount" DisplayName="Number of Likes" Group="Content Feedback" Type="Likes" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" CanToggleHidden="TRUE" JSLink="sp.ui.reputation.js" SourceID="http://schemas.microsoft.com/sharepoint/v3">
+          <FieldRefs>
+            <FieldRef Name="LikedBy" />
+          </FieldRefs>
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

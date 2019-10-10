@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field ID="{A0DD6C22-0988-453E-B3E2-77479DC9F014}" Name="ManagedPropertyMapping" StaticName="ManagedPropertyMapping" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Display Template Columns" DisplayName="Managed Property Mappings" Description="Enter the slots and the managed properties that map to the slots. This field will be used to determine which managed properties are retrieved from SharePoint Search when you are using this Display Template. Use the format &quot;slot name&quot;:&quot;property name&quot;, separated by commas." Type="Note" UnlimitedLengthInDocumentLibrary="TRUE" Required="FALSE" CanToggleHidden="TRUE" Sealed="TRUE" RichText="FALSE" />
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

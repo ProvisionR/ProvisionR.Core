@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4F451C46F6C6439FB1D60636C9021578">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4F451C46F6C6439FB1D60636C9021578" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field DisplayName="Document Type" Name="DocumentType" Group="Custom Content Types" Type="Choice" Required="TRUE" ID="{f991c617-8a12-4a8b-b128-c00ca7abb98e}" SourceID="{5855b280-bfd0-4f09-a7ac-4d202b46c338}" StaticName="DocumentType" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" FillInChoice="FALSE" Format="Dropdown" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Agreed FRA</CHOICE>
+            <CHOICE>Air test results</CHOICE>
+            <CHOICE>As-built drawing</CHOICE>
+            <CHOICE>Calculations</CHOICE>
+            <CHOICE>CCTV file</CHOICE>
+            <CHOICE>Deeds of Servitude</CHOICE>
+            <CHOICE>Deeds of Servitude</CHOICE>
+            <CHOICE>Design risk assessment</CHOICE>
+            <CHOICE>Development V’s Impact Spreadsheet</CHOICE>
+            <CHOICE>Drainage calculations</CHOICE>
+            <CHOICE>Drainage proposal</CHOICE>
+            <CHOICE>Electricity supplier details</CHOICE>
+            <CHOICE>Fire Authority Approval</CHOICE>
+            <CHOICE>Fire authority Letter</CHOICE>
+            <CHOICE>Flood Risk Assessment</CHOICE>
+            <CHOICE>Ground Investigation Report</CHOICE>
+            <CHOICE>Habitation Certificate</CHOICE>
+            <CHOICE>Health and Safety File</CHOICE>
+            <CHOICE>Highlighted map</CHOICE>
+            <CHOICE>Indicative FRA</CHOICE>
+            <CHOICE>Internal plumbing schematics</CHOICE>
+            <CHOICE>Land title transfer</CHOICE>
+            <CHOICE>Legal document</CHOICE>
+            <CHOICE>Location plan</CHOICE>
+            <CHOICE>Longitudinal sections</CHOICE>
+            <CHOICE>Maintenance report</CHOICE>
+            <CHOICE>Manhole and control manhole</CHOICE>
+            <CHOICE>Manhole Schedules</CHOICE>
+            <CHOICE>Meter size data sheet</CHOICE>
+            <CHOICE>Model check sheet</CHOICE>
+            <CHOICE>NIA Development Polygons</CHOICE>
+            <CHOICE>NIA Final Report</CHOICE>
+            <CHOICE>NIA Flooding Info</CHOICE>
+            <CHOICE>NIA Impact V’s Solution Spreadsheet</CHOICE>
+            <CHOICE>NIA Internal Review</CHOICE>
+            <CHOICE>NIA Stage 1 Report</CHOICE>
+            <CHOICE>NIA Stage 1 Report Template</CHOICE>
+            <CHOICE>NIA Stage 1 Scope</CHOICE>
+            <CHOICE>NIA Stage 1 Scope Flow Chart</CHOICE>
+            <CHOICE>NIA Stage 2 Optioneering</CHOICE>
+            <CHOICE>NIA Stage 2 Report Template</CHOICE>
+            <CHOICE>NIA Stage 2 Scope</CHOICE>
+            <CHOICE>O&amp;M manual</CHOICE>
+            <CHOICE>Other</CHOICE>
+            <CHOICE>Post-connection sampling results</CHOICE>
+            <CHOICE>Pre-connection sampling results</CHOICE>
+            <CHOICE>Pressure test results</CHOICE>
+            <CHOICE>Pumping stations/ Mechanical and Electrical Stations Report</CHOICE>
+            <CHOICE>Risk assessment</CHOICE>
+            <CHOICE>Road Adoption</CHOICE>
+            <CHOICE>Road/footpath construction make up</CHOICE>
+            <CHOICE>Roads adoption plan</CHOICE>
+            <CHOICE>Schematics, Risk and Method Statement</CHOICE>
+            <CHOICE>Section 7 agreement</CHOICE>
+            <CHOICE>Shape Map</CHOICE>
+            <CHOICE>Soil Investigation Report</CHOICE>
+            <CHOICE>SUDS construction Details</CHOICE>
+            <CHOICE>Surface Water Options Plan</CHOICE>
+            <CHOICE>SWEG Escalation Submission</CHOICE>
+            <CHOICE>Telephone supplier details</CHOICE>
+            <CHOICE>Temporary waste water design proposal</CHOICE>
+            <CHOICE>Temporary Water design proposal</CHOICE>
+            <CHOICE>Third party written permission</CHOICE>
+            <CHOICE>Vehicle swept path analysis</CHOICE>
+            <CHOICE>Waste water pumping station general arrangement, plan and section WWPS</CHOICE>
+            <CHOICE>Waste water strategy/masterplan</CHOICE>
+            <CHOICE>Water design proposal</CHOICE>
+            <CHOICE>Water pumping station M&amp;E standard product pack WWPS</CHOICE>
+            <CHOICE>Water strategy/masterplan</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
